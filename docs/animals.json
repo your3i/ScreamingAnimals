@@ -3,8 +3,36 @@
 		"id": "1",
 		"name": "cow",
 		"images": [
-			"https://test1.com",
-			"https://test2.com"
+			"https://raw.githubusercontent.com/your3i/ShoutingAnimals/main/docs/resources/cow_1.jpg",
+			"https://raw.githubusercontent.com/your3i/ShoutingAnimals/main/docs/resources/cow_2.jpg",
+			"https://raw.githubusercontent.com/your3i/ShoutingAnimals/main/docs/resources/cow_3.jpg"
+		],
+		"shoutings": [
+			"https://github.com/your3i/ShoutingAnimals/raw/main/docs/resources/cow_1.mp3"	
+		]
+	},
+	{
+		"id": "2",
+		"name": "dog",
+		"images": [
+			"https://raw.githubusercontent.com/your3i/ShoutingAnimals/main/docs/resources/dog_1.jpg",
+			"https://raw.githubusercontent.com/your3i/ShoutingAnimals/main/docs/resources/dog_2.jpg",
+			"https://raw.githubusercontent.com/your3i/ShoutingAnimals/main/docs/resources/dog_3.jpg"
+		],
+		"shoutings": [
+			"https://github.com/your3i/ShoutingAnimals/raw/main/docs/resources/dog_1.mp3"	
+		]
+	},
+	{
+		"id": "3",
+		"name": "cat",
+		"images": [
+			"https://raw.githubusercontent.com/your3i/ShoutingAnimals/main/docs/resources/cat_1.jpg",
+			"https://raw.githubusercontent.com/your3i/ShoutingAnimals/main/docs/resources/cat_2.jpg",
+			"https://raw.githubusercontent.com/your3i/ShoutingAnimals/main/docs/resources/cat_3.jpg"
+		],
+		"shoutings": [
+			"https://github.com/your3i/ShoutingAnimals/raw/main/docs/resources/cat_1.mp3"	
 		]
 	}
 ]
