@@ -1,0 +1,10 @@
+[
+	{
+		"id": "1",
+		"name": "cow",
+		"images": [
+			"https://test1.com",
+			"https://test2.com"
+		]
+	}
+]
