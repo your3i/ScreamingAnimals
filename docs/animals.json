@@ -34,17 +34,5 @@
 		"shoutings": [
 			"https://github.com/your3i/ShoutingAnimals/raw/main/docs/resources/cat_1.mp3"
 		]
-	},
-	{
-		"id": "4",
-		"name": "lion",
-		"images": [
-			"https://raw.githubusercontent.com/your3i/ShoutingAnimals/main/docs/resources/lion_1.jpg",
-			"https://raw.githubusercontent.com/your3i/ShoutingAnimals/main/docs/resources/lion_2.jpg",
-			"https://raw.githubusercontent.com/your3i/ShoutingAnimals/main/docs/resources/lion_3.jpg"
-		],
-		"shoutings": [
-			"https://github.com/your3i/ShoutingAnimals/raw/main/docs/resources/lion_1.mp3"
-		]
 	}
 ]
