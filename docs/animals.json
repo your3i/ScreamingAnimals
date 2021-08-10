@@ -3,33 +3,54 @@
 		"id": "1",
 		"name": "cow",
 		"images": [
-			"https://raw.githubusercontent.com/your3i/ShoutingAnimals/main/docs/resources/cow_1.jpg",
-			"https://raw.githubusercontent.com/your3i/ShoutingAnimals/main/docs/resources/cow_2.jpg",
-			"https://raw.githubusercontent.com/your3i/ShoutingAnimals/main/docs/resources/cow_3.jpg"
+			{
+				"url": "https://raw.githubusercontent.com/your3i/ShoutingAnimals/main/docs/resources/cow_1.jpg",
+				"credit": "Photo by cottonbro from Pexels"
+			},
+			{
+				"url": "https://raw.githubusercontent.com/your3i/ShoutingAnimals/main/docs/resources/cow_2.jpg",
+				"credit": "Photo by ArtHouse Studio from Pexels"
+			},
+			{
+				"url": "https://raw.githubusercontent.com/your3i/ShoutingAnimals/main/docs/resources/cow_3.jpg",
+				"credit": "Photo by Nicklas Toft from Pexels"
+			}
 		],
 		"shoutings": [
-			"https://github.com/your3i/ShoutingAnimals/raw/main/docs/resources/cow_1.mp3"
+			"https://github.com/your3i/ShoutingAnimals/raw/main/docs/resources/cow_1.mp3",
+			"https://github.com/your3i/ShoutingAnimals/raw/main/docs/resources/cow_2.mp3"
 		]
 	},
 	{
 		"id": "2",
 		"name": "dog",
 		"images": [
-			"https://raw.githubusercontent.com/your3i/ShoutingAnimals/main/docs/resources/dog_1.jpg",
-			"https://raw.githubusercontent.com/your3i/ShoutingAnimals/main/docs/resources/dog_2.jpg",
-			"https://raw.githubusercontent.com/your3i/ShoutingAnimals/main/docs/resources/dog_3.jpg"
+			{
+				"url": "https://raw.githubusercontent.com/your3i/ShoutingAnimals/main/docs/resources/dog_1.jpg",
+				"credit": "Photo by Helena Lopes from Pexels"
+			},
+			{
+				"url": "https://raw.githubusercontent.com/your3i/ShoutingAnimals/main/docs/resources/dog_2.jpg",
+				"credit": "Photo by Laura Stanley from Pexels"
+			},
+			{
+				"url": "https://raw.githubusercontent.com/your3i/ShoutingAnimals/main/docs/resources/dog_3.jpg",
+				"credit": "Photo by Charles from Pexels"
+			}
 		],
 		"shoutings": [
-			"https://github.com/your3i/ShoutingAnimals/raw/main/docs/resources/dog_1.mp3"
+			"https://github.com/your3i/ShoutingAnimals/raw/main/docs/resources/dog_1.mp3",
+			"https://github.com/your3i/ShoutingAnimals/raw/main/docs/resources/dog_2.mp3"
 		]
 	},
 	{
 		"id": "3",
 		"name": "cat",
 		"images": [
-			"https://raw.githubusercontent.com/your3i/ShoutingAnimals/main/docs/resources/cat_1.jpg",
-			"https://raw.githubusercontent.com/your3i/ShoutingAnimals/main/docs/resources/cat_2.jpg",
-			"https://raw.githubusercontent.com/your3i/ShoutingAnimals/main/docs/resources/cat_3.jpg"
+			{
+				"url": "https://raw.githubusercontent.com/your3i/ShoutingAnimals/main/docs/resources/cat_1.jpg",
+				"credit": "Photo by Leonardo de Oliveira from Pexels"
+			}
 		],
 		"shoutings": [
 			"https://github.com/your3i/ShoutingAnimals/raw/main/docs/resources/cat_1.mp3"
@@ -39,12 +60,66 @@
 		"id": "4",
 		"name": "lion",
 		"images": [
-			"https://raw.githubusercontent.com/your3i/ShoutingAnimals/main/docs/resources/lion_1.jpg",
-			"https://raw.githubusercontent.com/your3i/ShoutingAnimals/main/docs/resources/lion_2.jpg",
-			"https://raw.githubusercontent.com/your3i/ShoutingAnimals/main/docs/resources/lion_3.jpg"
+			{
+				"url": "https://raw.githubusercontent.com/your3i/ShoutingAnimals/main/docs/resources/lion_1.jpg",
+				"credit": "Photo by Petr Ganaj from Pexels"
+			}
 		],
 		"shoutings": [
 			"https://github.com/your3i/ShoutingAnimals/raw/main/docs/resources/lion_1.mp3"
 		]
-	}
+	},
+	{
+		"id": "5",
+		"name": "duck",
+		"images": [
+			{
+				"url": "https://raw.githubusercontent.com/your3i/ShoutingAnimals/main/docs/resources/duck_1.jpg",
+				"credit": "Photo by Robert Laszlo from Pexels"
+			}
+		],
+		"shoutings": [
+			"https://github.com/your3i/ShoutingAnimals/raw/main/docs/resources/duck_1.mp3"
+		]
+	},
+	{
+		"id": "6",
+		"name": "chicken",
+		"images": [
+			{
+				"url": "https://raw.githubusercontent.com/your3i/ShoutingAnimals/main/docs/resources/chicken_1.jpg",
+				"credit": "Photo by Olya Kobruseva from Pexels"
+			}
+		],
+		"shoutings": [
+			"https://github.com/your3i/ShoutingAnimals/raw/main/docs/resources/chicken_1.mp3"
+		]
+	},
+	{
+		"id": "7",
+		"name": "elephant",
+		"images": [
+			{
+				"url": "https://raw.githubusercontent.com/your3i/ShoutingAnimals/main/docs/resources/elephant_1.jpg",
+				"credit": "Photo by Taryn Elliott from Pexels"
+			}
+		],
+		"shoutings": [
+			"https://github.com/your3i/ShoutingAnimals/raw/main/docs/resources/elephant_1.mp3"
+		]
+	},
+	{
+		"id": "8",
+		"name": "monkey",
+		"images": [
+			{
+				"url": "https://raw.githubusercontent.com/your3i/ShoutingAnimals/main/docs/resources/monkey_1.jpg",
+				"credit": "Photo by Leonid Danilov from Pexels"
+			}
+		],
+		"shoutings": [
+			"https://github.com/your3i/ShoutingAnimals/raw/main/docs/resources/monkey_1.mp3"
+		]
+	},
+	
 ]
