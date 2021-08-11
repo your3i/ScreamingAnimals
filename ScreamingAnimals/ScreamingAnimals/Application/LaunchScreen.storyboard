@@ -16,16 +16,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="y3d-g1-ez7">
-                                <rect key="frame" x="147" y="293.5" width="120" height="119"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image-logo" translatesAutoresizingMaskIntoConstraints="NO" id="y3d-g1-ez7">
+                                <rect key="frame" x="87" y="233" width="240" height="240"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="ICg-uU-UDo"/>
+                                    <constraint firstAttribute="width" constant="240" id="ICg-uU-UDo"/>
                                     <constraint firstAttribute="width" secondItem="y3d-g1-ez7" secondAttribute="height" multiplier="1:1" id="esW-Ed-wY5"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
-                        <color key="backgroundColor" name="LaunchScreenBackground"/>
+                        <color key="backgroundColor" name="Brand"/>
                         <constraints>
                             <constraint firstItem="y3d-g1-ez7" firstAttribute="centerY" secondItem="Bcu-3y-fUS" secondAttribute="centerY" constant="-100" id="t9T-Yb-iwp"/>
                             <constraint firstItem="y3d-g1-ez7" firstAttribute="centerX" secondItem="Bcu-3y-fUS" secondAttribute="centerX" id="tCO-TX-rxb"/>
@@ -38,9 +38,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="play.circle.fill" catalog="system" width="128" height="121"/>
-        <namedColor name="LaunchScreenBackground">
-            <color red="0.8784313725490196" green="0.98431372549019602" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <image name="image-logo" width="1024" height="1024"/>
+        <namedColor name="Brand">
+            <color red="0.99607843137254903" green="0.81568627450980391" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

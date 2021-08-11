@@ -20,7 +20,6 @@
 		FFEB624626C38ECF00FE2DD1 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEB624126C38ECF00FE2DD1 /* AppView.swift */; };
 		FFEB624926C38F1100FE2DD1 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEB624826C38F1100FE2DD1 /* Animal.swift */; };
 		FFEB624B26C3958C00FE2DD1 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFEB624A26C3958C00FE2DD1 /* Colors.xcassets */; };
-		FFEB624D26C39B2300FE2DD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFEB624C26C39B2300FE2DD1 /* Assets.xcassets */; };
 		FFEB624F26C39E8100FE2DD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFEB624E26C39E8100FE2DD1 /* LaunchScreen.storyboard */; };
 		FFEB625226C3A1D800FE2DD1 /* AnimalDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEB625126C3A1D800FE2DD1 /* AnimalDTO.swift */; };
 		FFEB625426C3A38D00FE2DD1 /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEB625326C3A38D00FE2DD1 /* APIEndpoints.swift */; };
@@ -31,6 +30,8 @@
 		FFEB626926C3B1B500FE2DD1 /* QGrid.html in Resources */ = {isa = PBXBuildFile; fileRef = FFEB626726C3B1B500FE2DD1 /* QGrid.html */; };
 		FFEB626A26C3B1B500FE2DD1 /* Kingfisher.html in Resources */ = {isa = PBXBuildFile; fileRef = FFEB626826C3B1B500FE2DD1 /* Kingfisher.html */; };
 		FFEB626E26C3B43A00FE2DD1 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEB626D26C3B43A00FE2DD1 /* WebView.swift */; };
+		FFEB627126C3F3C100FE2DD1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FFEB627326C3F3C100FE2DD1 /* InfoPlist.strings */; };
+		FFEB627726C40DEB00FE2DD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFEB627626C40DEB00FE2DD1 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +69,6 @@
 		FFEB624126C38ECF00FE2DD1 /* AppView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		FFEB624826C38F1100FE2DD1 /* Animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		FFEB624A26C3958C00FE2DD1 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
-		FFEB624C26C39B2300FE2DD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFEB624E26C39E8100FE2DD1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFEB625126C3A1D800FE2DD1 /* AnimalDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDTO.swift; sourceTree = "<group>"; };
 		FFEB625326C3A38D00FE2DD1 /* APIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoints.swift; sourceTree = "<group>"; };
@@ -81,6 +81,10 @@
 		FFEB626726C3B1B500FE2DD1 /* QGrid.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = QGrid.html; sourceTree = "<group>"; };
 		FFEB626826C3B1B500FE2DD1 /* Kingfisher.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Kingfisher.html; sourceTree = "<group>"; };
 		FFEB626D26C3B43A00FE2DD1 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		FFEB627226C3F3C100FE2DD1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FFEB627426C3F3C400FE2DD1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		FFEB627526C3F3C500FE2DD1 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FFEB627626C40DEB00FE2DD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,9 +259,10 @@
 		FFEB625C26C3AA3300FE2DD1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				FFEB624C26C39B2300FE2DD1 /* Assets.xcassets */,
+				FFEB627626C40DEB00FE2DD1 /* Assets.xcassets */,
 				FFEB624A26C3958C00FE2DD1 /* Colors.xcassets */,
 				FFEB626126C3AB1500FE2DD1 /* Localizable.strings */,
+				FFEB627326C3F3C100FE2DD1 /* InfoPlist.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -386,11 +391,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFEB625F26C3AB1500FE2DD1 /* Localizable.strings in Resources */,
+				FFEB627126C3F3C100FE2DD1 /* InfoPlist.strings in Resources */,
 				FFEB624B26C3958C00FE2DD1 /* Colors.xcassets in Resources */,
 				FFEB626A26C3B1B500FE2DD1 /* Kingfisher.html in Resources */,
 				FFEB626926C3B1B500FE2DD1 /* QGrid.html in Resources */,
 				FFEB624F26C39E8100FE2DD1 /* LaunchScreen.storyboard in Resources */,
-				FFEB624D26C39B2300FE2DD1 /* Assets.xcassets in Resources */,
+				FFEB627726C40DEB00FE2DD1 /* Assets.xcassets in Resources */,
 				FFEB621026C38DB500FE2DD1 /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,6 +480,16 @@
 			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
+		FFEB627326C3F3C100FE2DD1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFEB627226C3F3C100FE2DD1 /* en */,
+				FFEB627426C3F3C400FE2DD1 /* zh-Hans */,
+				FFEB627526C3F3C500FE2DD1 /* ja */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -528,7 +544,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -583,7 +599,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -598,9 +614,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ScreamingAnimals/Preview Content\"";
-				DEVELOPMENT_TEAM = 6A7D89TLJ3;
+				DEVELOPMENT_TEAM = GXAB643ZM7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ScreamingAnimals/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -608,8 +625,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.your3i.ScreamingAnimals;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.your3i.screaming-animals";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -620,9 +638,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ScreamingAnimals/Preview Content\"";
-				DEVELOPMENT_TEAM = 6A7D89TLJ3;
+				DEVELOPMENT_TEAM = GXAB643ZM7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ScreamingAnimals/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -630,8 +649,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.your3i.ScreamingAnimals;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.your3i.screaming-animals";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
