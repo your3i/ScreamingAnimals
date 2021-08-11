@@ -34,7 +34,7 @@ struct AnimalView: View {
 
     var body: some View {
 		VStack() {
-			KFImage(animal.firstImage)
+			KFImage(animal.image)
 				.resizing(referenceSize: CGSize(width: 100, height: 100), mode: .aspectFill)
 				.clipShape(Circle())
 				.shadow(color: .black, radius: 2)
@@ -57,7 +57,8 @@ struct AnimalView: View {
 
 struct AnimalView_Previews: PreviewProvider {
     static var previews: some View {
-		let animalImage = URL(string: "https://raw.githubusercontent.com/your3i/ShoutingAnimals/main/docs/resources/lion_1.jpg")!
-		let animal = Animal(id: "123", name: "animal name", images: [Animal.AnimalPhoto(url: animalImage, credit: "credit text")], shoutings: [], firstImage: animalImage)
+		let animalImage = URL(string: "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/lion_1.jpg")
+		let animal = Animal(id: "123", name: "animal name", image: animalImage, imageCredit: "credit text", shoutings: [])
+		AnimalView(animal: animal)
     }
 }

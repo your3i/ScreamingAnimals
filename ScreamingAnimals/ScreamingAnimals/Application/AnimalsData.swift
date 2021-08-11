@@ -19,16 +19,18 @@ final class AnimalsData: ObservableObject {
 	}
 
 	private func fetch() {
-		let url = URL(string: "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/animals.json")!
-		URLSession.shared.dataTaskPublisher(for: url)
-			.tryMap { $0.data }
-			.decode(type: [Animal].self, decoder: JSONDecoder())
+		let jsonURL = "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/animals.json"
+		DefaultAnimalsRepository(jsonURL)
+			.getAnimals()
 			.receive(on: DispatchQueue.main)
 			.sink(
-				receiveCompletion: { print("Received completion: \($0).") },
-				receiveValue: { [weak self] animals in
-					self?.animals = animals
-				})
+				receiveCompletion: {
+					print("Received completion: \($0).")
+				},
+				receiveValue: { [weak self] result in
+					self?.animals = result
+				}
+			)
 			.store(in: &cancellables)
 	}
 
