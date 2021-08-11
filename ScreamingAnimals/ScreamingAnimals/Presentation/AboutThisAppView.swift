@@ -13,7 +13,7 @@ struct AboutThisAppView: View {
 			HStack {
 				Text("Version")
 				Spacer()
-				Text("1.0.0")
+				Text("1.0")
 			}
 			NavigationLink(
 				destination: LicensesView(),
