@@ -20,7 +20,7 @@ struct AppView: View {
                 .navigationTitle("Screaming Animals")
 				.navigationBarItems(
 					trailing: NavigationLink(
-						destination: InfoView(),
+						destination: AboutThisAppView(),
 						label: { Image(systemName: "info.circle.fill") }
 					)
 				)
