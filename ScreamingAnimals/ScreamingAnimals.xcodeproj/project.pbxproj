@@ -26,6 +26,7 @@
 		FFEB625426C3A38D00FE2DD1 /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEB625326C3A38D00FE2DD1 /* APIEndpoints.swift */; };
 		FFEB625726C3A46D00FE2DD1 /* AnimalsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEB625626C3A46D00FE2DD1 /* AnimalsRepository.swift */; };
 		FFEB625A26C3A4CF00FE2DD1 /* DefaultAnimalsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEB625926C3A4CF00FE2DD1 /* DefaultAnimalsRepository.swift */; };
+		FFEB625F26C3AB1500FE2DD1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FFEB626126C3AB1500FE2DD1 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,9 @@
 		FFEB625326C3A38D00FE2DD1 /* APIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoints.swift; sourceTree = "<group>"; };
 		FFEB625626C3A46D00FE2DD1 /* AnimalsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsRepository.swift; sourceTree = "<group>"; };
 		FFEB625926C3A4CF00FE2DD1 /* DefaultAnimalsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAnimalsRepository.swift; sourceTree = "<group>"; };
+		FFEB626026C3AB1500FE2DD1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FFEB626226C3AB1A00FE2DD1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		FFEB626326C3AB1B00FE2DD1 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,13 +127,12 @@
 			isa = PBXGroup;
 			children = (
 				FFEB621126C38DB500FE2DD1 /* Info.plist */,
-				FFEB624C26C39B2300FE2DD1 /* Assets.xcassets */,
-				FFEB624A26C3958C00FE2DD1 /* Colors.xcassets */,
 				FFEB623926C38E7600FE2DD1 /* Application */,
 				FFEB623A26C38E8000FE2DD1 /* Data */,
 				FFEB623B26C38E8900FE2DD1 /* Domain */,
 				FFEB623C26C38E9300FE2DD1 /* Presentation */,
 				FFEB620E26C38DB500FE2DD1 /* Preview Content */,
+				FFEB625C26C3AA3300FE2DD1 /* Resources */,
 			);
 			path = ScreamingAnimals;
 			sourceTree = "<group>";
@@ -240,6 +243,16 @@
 			path = Interfaces;
 			sourceTree = "<group>";
 		};
+		FFEB625C26C3AA3300FE2DD1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FFEB624C26C39B2300FE2DD1 /* Assets.xcassets */,
+				FFEB624A26C3958C00FE2DD1 /* Colors.xcassets */,
+				FFEB626126C3AB1500FE2DD1 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -328,7 +341,8 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
+				"zh-Hans",
+				ja,
 			);
 			mainGroup = FFEB61FC26C38DB200FE2DD1;
 			packageReferences = (
@@ -351,6 +365,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFEB625F26C3AB1500FE2DD1 /* Localizable.strings in Resources */,
 				FFEB624B26C3958C00FE2DD1 /* Colors.xcassets in Resources */,
 				FFEB624F26C39E8100FE2DD1 /* LaunchScreen.storyboard in Resources */,
 				FFEB624D26C39B2300FE2DD1 /* Assets.xcassets in Resources */,
@@ -423,6 +438,19 @@
 			targetProxy = FFEB622226C38DB500FE2DD1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FFEB626126C3AB1500FE2DD1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFEB626026C3AB1500FE2DD1 /* en */,
+				FFEB626226C3AB1A00FE2DD1 /* zh-Hans */,
+				FFEB626326C3AB1B00FE2DD1 /* ja */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		FFEB622826C38DB500FE2DD1 /* Debug */ = {
@@ -559,7 +587,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.your3i.ScreamingAnimals;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -581,7 +609,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.your3i.ScreamingAnimals;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
