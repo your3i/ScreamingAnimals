@@ -17,7 +17,7 @@ struct AppView: View {
 				animalsData.animals,
 				columns: 3,
 				columnsInLandscape: 4) { AnimalView(animal: $0) }
-                .navigationTitle("Screaming Animals")
+                .navigationTitle("Animal Sounds")
 				.navigationBarItems(
 					trailing: NavigationLink(
 						destination: AboutThisAppView(),
