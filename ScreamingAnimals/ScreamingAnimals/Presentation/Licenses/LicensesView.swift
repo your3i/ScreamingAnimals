@@ -7,9 +7,6 @@
 
 import SwiftUI
 
-private let kingfisherURL = Bundle.main.url(forResource: "Kingfisher", withExtension: "html")!
-private let qGridURL = Bundle.main.url(forResource: "QGrid", withExtension: "html")!
-
 struct LicensesView: View {
     var body: some View {
 		List {
@@ -36,12 +33,12 @@ struct LicensesView: View {
 					}
 				})
 			NavigationLink(
-				destination: WebView(url: kingfisherURL),
+				destination: WebView(url: URL(string: "https://raw.githubusercontent.com/onevcat/Kingfisher/master/LICENSE")!),
 				label: {
 					Text("Kingfisher")
 				})
 			NavigationLink(
-				destination: WebView(url: qGridURL),
+				destination: WebView(url: URL(string: "https://raw.githubusercontent.com/quantopian/qgrid/master/LICENSE")!),
 				label: {
 					Text("QGrid")
 				})

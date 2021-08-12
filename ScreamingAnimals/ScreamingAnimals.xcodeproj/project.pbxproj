@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF15E4F926C4ED13005AD900 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF15E4F826C4ED13005AD900 /* SafariView.swift */; };
 		FFEB620926C38DB200FE2DD1 /* ScreamingAnimalsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEB620826C38DB200FE2DD1 /* ScreamingAnimalsApp.swift */; };
 		FFEB621026C38DB500FE2DD1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFEB620F26C38DB500FE2DD1 /* Preview Assets.xcassets */; };
 		FFEB621B26C38DB500FE2DD1 /* ScreamingAnimalsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEB621A26C38DB500FE2DD1 /* ScreamingAnimalsTests.swift */; };
@@ -27,8 +28,6 @@
 		FFEB625A26C3A4CF00FE2DD1 /* DefaultAnimalsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEB625926C3A4CF00FE2DD1 /* DefaultAnimalsRepository.swift */; };
 		FFEB625F26C3AB1500FE2DD1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FFEB626126C3AB1500FE2DD1 /* Localizable.strings */; };
 		FFEB626526C3ACBD00FE2DD1 /* LicensesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEB626426C3ACBD00FE2DD1 /* LicensesView.swift */; };
-		FFEB626926C3B1B500FE2DD1 /* QGrid.html in Resources */ = {isa = PBXBuildFile; fileRef = FFEB626726C3B1B500FE2DD1 /* QGrid.html */; };
-		FFEB626A26C3B1B500FE2DD1 /* Kingfisher.html in Resources */ = {isa = PBXBuildFile; fileRef = FFEB626826C3B1B500FE2DD1 /* Kingfisher.html */; };
 		FFEB626E26C3B43A00FE2DD1 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEB626D26C3B43A00FE2DD1 /* WebView.swift */; };
 		FFEB627126C3F3C100FE2DD1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FFEB627326C3F3C100FE2DD1 /* InfoPlist.strings */; };
 		FFEB627726C40DEB00FE2DD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFEB627626C40DEB00FE2DD1 /* Assets.xcassets */; };
@@ -52,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF15E4F826C4ED13005AD900 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		FFEB620526C38DB200FE2DD1 /* ScreamingAnimals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreamingAnimals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFEB620826C38DB200FE2DD1 /* ScreamingAnimalsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreamingAnimalsApp.swift; sourceTree = "<group>"; };
 		FFEB620F26C38DB500FE2DD1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -78,8 +78,6 @@
 		FFEB626226C3AB1A00FE2DD1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		FFEB626326C3AB1B00FE2DD1 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FFEB626426C3ACBD00FE2DD1 /* LicensesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicensesView.swift; sourceTree = "<group>"; };
-		FFEB626726C3B1B500FE2DD1 /* QGrid.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = QGrid.html; sourceTree = "<group>"; };
-		FFEB626826C3B1B500FE2DD1 /* Kingfisher.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Kingfisher.html; sourceTree = "<group>"; };
 		FFEB626D26C3B43A00FE2DD1 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		FFEB627226C3F3C100FE2DD1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FFEB627426C3F3C400FE2DD1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
@@ -270,10 +268,9 @@
 		FFEB626626C3B11500FE2DD1 /* Licenses */ = {
 			isa = PBXGroup;
 			children = (
-				FFEB626826C3B1B500FE2DD1 /* Kingfisher.html */,
-				FFEB626726C3B1B500FE2DD1 /* QGrid.html */,
 				FFEB626426C3ACBD00FE2DD1 /* LicensesView.swift */,
 				FFEB626D26C3B43A00FE2DD1 /* WebView.swift */,
+				FF15E4F826C4ED13005AD900 /* SafariView.swift */,
 			);
 			path = Licenses;
 			sourceTree = "<group>";
@@ -393,8 +390,6 @@
 				FFEB625F26C3AB1500FE2DD1 /* Localizable.strings in Resources */,
 				FFEB627126C3F3C100FE2DD1 /* InfoPlist.strings in Resources */,
 				FFEB624B26C3958C00FE2DD1 /* Colors.xcassets in Resources */,
-				FFEB626A26C3B1B500FE2DD1 /* Kingfisher.html in Resources */,
-				FFEB626926C3B1B500FE2DD1 /* QGrid.html in Resources */,
 				FFEB624F26C39E8100FE2DD1 /* LaunchScreen.storyboard in Resources */,
 				FFEB627726C40DEB00FE2DD1 /* Assets.xcassets in Resources */,
 				FFEB621026C38DB500FE2DD1 /* Preview Assets.xcassets in Resources */,
@@ -428,6 +423,7 @@
 				FFEB625426C3A38D00FE2DD1 /* APIEndpoints.swift in Sources */,
 				FFEB625A26C3A4CF00FE2DD1 /* DefaultAnimalsRepository.swift in Sources */,
 				FFEB625226C3A1D800FE2DD1 /* AnimalDTO.swift in Sources */,
+				FF15E4F926C4ED13005AD900 /* SafariView.swift in Sources */,
 				FFEB626526C3ACBD00FE2DD1 /* LicensesView.swift in Sources */,
 				FFEB624226C38ECF00FE2DD1 /* AnimalsData.swift in Sources */,
 				FFEB624626C38ECF00FE2DD1 /* AppView.swift in Sources */,
