@@ -11,7 +11,7 @@ import SwiftUI
 
 private var player: AVPlayer?
 
-private func playShouting(url: URL) {
+private func playSound(url: URL) {
 	player?.cancelPendingPrerolls()
 	player = nil
 	let playerItem = AVPlayerItem(url: url)
@@ -26,28 +26,40 @@ struct AnimalView: View {
 
 	@State private var isTapped = false
 
-	private func playAnimalShouting() {
+	private func playAnimalSound() {
 		if let url = animal.shoutings.randomElement() {
-			playShouting(url: url)
+			playSound(url: url)
 		}
 	}
 
     var body: some View {
 		VStack() {
-			KFImage(animal.image)
-				.resizing(referenceSize: CGSize(width: 100, height: 100), mode: .aspectFill)
-				.clipShape(Circle())
-				.shadow(color: .black, radius: 2)
-				.scaleEffect(isTapped ? 1.3 : 1.0)
-				.animation(.spring(response: 0.4, dampingFraction: 0.6))
-				.onTapGesture {
-					playAnimalShouting()
-					isTapped.toggle()
-					DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+			CustomPreviewContextMenu {
+				KFImage(animal.image)
+					.resizing(referenceSize: CGSize(width: 100, height: 100), mode: .aspectFill)
+					.clipShape(Circle())
+					.shadow(color: .black, radius: 2)
+					.scaleEffect(isTapped ? 1.3 : 1.0)
+					.animation(.spring(response: 0.4, dampingFraction: 0.6))
+					.onTapGesture {
+						playAnimalSound()
 						isTapped.toggle()
+						DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+							isTapped.toggle()
+						}
 					}
+					.frame(width: 120, height: 120)
+			} preview: {
+				AnimalPhotoView(animal: animal)
+			} actions: {
+				let favoriteAction = UIAction(title: "Favorite", image: UIImage(systemName: "star")) { _ in
+					print("favoriteAction tapped")
 				}
-				.frame(width: 120, height: 120)
+				let playAction = UIAction(title: "Play sound", image: UIImage(systemName: "play")) { _ in
+					playAnimalSound()
+				}
+				return UIMenu(title: "", children: [favoriteAction, playAction])
+			}
 			Text(animal.name)
 				.font(.caption)
 				.foregroundColor(Color("Text"))

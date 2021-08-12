@@ -19,10 +19,18 @@ struct AppView: View {
 				columnsInLandscape: 4) { AnimalView(animal: $0) }
 				.navigationTitle("Home.Title")
 				.navigationBarItems(
-					trailing: NavigationLink(
-						destination: AboutThisAppView(),
-						label: { Image(systemName: "info.circle.fill") }
-					)
+					leading:
+						NavigationLink(
+							destination: AboutThisAppView(),
+							label: { Image(systemName: "info.circle.fill") }
+						),
+					trailing:
+						Button(
+							action: { print("tapped") },
+							label: {
+								Image(systemName: "line.horizontal.3.decrease.circle")
+							}
+						)
 				)
         }
     }

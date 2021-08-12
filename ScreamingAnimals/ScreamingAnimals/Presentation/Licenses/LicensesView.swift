@@ -33,12 +33,14 @@ struct LicensesView: View {
 					}
 				})
 			NavigationLink(
-				destination: WebView(url: URL(string: "https://raw.githubusercontent.com/onevcat/Kingfisher/master/LICENSE")!),
+				destination: WebView(url: URL(string: "https://raw.githubusercontent.com/onevcat/Kingfisher/master/LICENSE")!)
+					.navigationTitle("Kingfisher"),
 				label: {
 					Text("Kingfisher")
 				})
 			NavigationLink(
-				destination: WebView(url: URL(string: "https://raw.githubusercontent.com/quantopian/qgrid/master/LICENSE")!),
+				destination: WebView(url: URL(string: "https://raw.githubusercontent.com/quantopian/qgrid/master/LICENSE")!)
+					.navigationTitle("QGrid"),
 				label: {
 					Text("QGrid")
 				})

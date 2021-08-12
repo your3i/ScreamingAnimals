@@ -28,7 +28,7 @@ final class AnimalsData: ObservableObject {
 					print("Received completion: \($0).")
 				},
 				receiveValue: { [weak self] result in
-					self?.animals = result
+					self?.animals = result.shuffled()
 				}
 			)
 			.store(in: &cancellables)

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF15E50026C549FB005AD900 /* CustomPreviewContextMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF15E4FF26C549FB005AD900 /* CustomPreviewContextMenu.swift */; };
+		FF15E50226C552DC005AD900 /* AnimalPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF15E50126C552DC005AD900 /* AnimalPhotoView.swift */; };
 		FFEB620926C38DB200FE2DD1 /* ScreamingAnimalsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEB620826C38DB200FE2DD1 /* ScreamingAnimalsApp.swift */; };
 		FFEB621026C38DB500FE2DD1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFEB620F26C38DB500FE2DD1 /* Preview Assets.xcassets */; };
 		FFEB621B26C38DB500FE2DD1 /* ScreamingAnimalsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEB621A26C38DB500FE2DD1 /* ScreamingAnimalsTests.swift */; };
@@ -50,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF15E4FF26C549FB005AD900 /* CustomPreviewContextMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPreviewContextMenu.swift; sourceTree = "<group>"; };
+		FF15E50126C552DC005AD900 /* AnimalPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalPhotoView.swift; sourceTree = "<group>"; };
 		FFEB620526C38DB200FE2DD1 /* ScreamingAnimals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreamingAnimals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFEB620826C38DB200FE2DD1 /* ScreamingAnimalsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreamingAnimalsApp.swift; sourceTree = "<group>"; };
 		FFEB620F26C38DB500FE2DD1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -110,6 +114,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF15E4FA26C4FA9E005AD900 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FF15E4FF26C549FB005AD900 /* CustomPreviewContextMenu.swift */,
+				FFEB626D26C3B43A00FE2DD1 /* WebView.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		FFEB61FC26C38DB200FE2DD1 = {
 			isa = PBXGroup;
 			children = (
@@ -203,10 +216,12 @@
 		FFEB623C26C38E9300FE2DD1 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				FFEB626626C3B11500FE2DD1 /* Licenses */,
+				FFEB623E26C38ECF00FE2DD1 /* AboutThisAppView.swift */,
+				FF15E50126C552DC005AD900 /* AnimalPhotoView.swift */,
 				FFEB624026C38ECF00FE2DD1 /* AnimalView.swift */,
 				FFEB624126C38ECF00FE2DD1 /* AppView.swift */,
-				FFEB623E26C38ECF00FE2DD1 /* AboutThisAppView.swift */,
+				FFEB626626C3B11500FE2DD1 /* Licenses */,
+				FF15E4FA26C4FA9E005AD900 /* Utils */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -267,7 +282,6 @@
 			isa = PBXGroup;
 			children = (
 				FFEB626426C3ACBD00FE2DD1 /* LicensesView.swift */,
-				FFEB626D26C3B43A00FE2DD1 /* WebView.swift */,
 			);
 			path = Licenses;
 			sourceTree = "<group>";
@@ -414,8 +428,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF15E50226C552DC005AD900 /* AnimalPhotoView.swift in Sources */,
 				FFEB624526C38ECF00FE2DD1 /* AnimalView.swift in Sources */,
 				FFEB624926C38F1100FE2DD1 /* Animal.swift in Sources */,
+				FF15E50026C549FB005AD900 /* CustomPreviewContextMenu.swift in Sources */,
 				FFEB624326C38ECF00FE2DD1 /* AboutThisAppView.swift in Sources */,
 				FFEB625426C3A38D00FE2DD1 /* APIEndpoints.swift in Sources */,
 				FFEB625A26C3A4CF00FE2DD1 /* DefaultAnimalsRepository.swift in Sources */,
