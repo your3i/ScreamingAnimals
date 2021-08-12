@@ -39,15 +39,6 @@ struct AnimalView: View {
 					.resizing(referenceSize: CGSize(width: 100, height: 100), mode: .aspectFill)
 					.clipShape(Circle())
 					.shadow(color: .black, radius: 2)
-					.scaleEffect(isTapped ? 1.3 : 1.0)
-					.animation(.spring(response: 0.4, dampingFraction: 0.6))
-					.onTapGesture {
-						playAnimalSound()
-						isTapped.toggle()
-						DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-							isTapped.toggle()
-						}
-					}
 					.frame(width: 120, height: 120)
 			} preview: {
 				AnimalPhotoView(animal: animal)
@@ -59,6 +50,15 @@ struct AnimalView: View {
 					playAnimalSound()
 				}
 				return UIMenu(title: "", children: [favoriteAction, playAction])
+			}
+			.scaleEffect(isTapped ? 1.3 : 1.0)
+			.animation(.spring(response: 0.4, dampingFraction: 0.6))
+			.onTapGesture {
+				playAnimalSound()
+				isTapped.toggle()
+				DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+					isTapped.toggle()
+				}
 			}
 			Text(animal.name)
 				.font(.caption)
