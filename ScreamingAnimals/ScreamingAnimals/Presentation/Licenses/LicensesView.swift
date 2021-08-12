@@ -43,7 +43,7 @@ struct LicensesView: View {
 					Text("QGrid")
 				})
 		}
-		.navigationTitle(Text("Licenses"))
+		.navigationTitle(Text("Licenses.Title"))
     }
 }
 

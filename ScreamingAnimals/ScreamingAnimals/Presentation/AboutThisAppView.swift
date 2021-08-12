@@ -11,17 +11,17 @@ struct AboutThisAppView: View {
     var body: some View {
 		List {
 			HStack {
-				Text("Version")
+				Text("AboutThisApp.Menu.Version")
 				Spacer()
 				Text("1.0")
 			}
 			NavigationLink(
 				destination: LicensesView(),
 				label: {
-					Text("Licenses")
+					Text("AboutThisApp.Menu.Licenses")
 				})
 		}
-		.navigationTitle(Text("About This App"))
+		.navigationTitle(Text("AboutThisApp.Title"))
     }
 }
 

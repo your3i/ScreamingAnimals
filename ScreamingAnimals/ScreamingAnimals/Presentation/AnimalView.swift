@@ -50,6 +50,7 @@ struct AnimalView: View {
 				.frame(width: 120, height: 120)
 			Text(animal.name)
 				.font(.caption)
+				.foregroundColor(Color("Text"))
 				.padding(.bottom, 8)
 		}
     }

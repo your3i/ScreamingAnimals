@@ -5,3 +5,13 @@
   Created by nono on 2021/08/11.
   
 */
+
+"Home.Title" = "Animal Sounds";
+
+"AboutThisApp.Title" = "About This App";
+
+"AboutThisApp.Menu.Version" = "Version";
+
+"AboutThisApp.Menu.Licenses" = "Licenses";
+
+"Licenses.Title" = "Licenses";

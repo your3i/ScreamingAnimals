@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FF15E4F926C4ED13005AD900 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF15E4F826C4ED13005AD900 /* SafariView.swift */; };
 		FFEB620926C38DB200FE2DD1 /* ScreamingAnimalsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEB620826C38DB200FE2DD1 /* ScreamingAnimalsApp.swift */; };
 		FFEB621026C38DB500FE2DD1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFEB620F26C38DB500FE2DD1 /* Preview Assets.xcassets */; };
 		FFEB621B26C38DB500FE2DD1 /* ScreamingAnimalsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEB621A26C38DB500FE2DD1 /* ScreamingAnimalsTests.swift */; };
@@ -51,7 +50,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FF15E4F826C4ED13005AD900 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		FFEB620526C38DB200FE2DD1 /* ScreamingAnimals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreamingAnimals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFEB620826C38DB200FE2DD1 /* ScreamingAnimalsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreamingAnimalsApp.swift; sourceTree = "<group>"; };
 		FFEB620F26C38DB500FE2DD1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -270,7 +268,6 @@
 			children = (
 				FFEB626426C3ACBD00FE2DD1 /* LicensesView.swift */,
 				FFEB626D26C3B43A00FE2DD1 /* WebView.swift */,
-				FF15E4F826C4ED13005AD900 /* SafariView.swift */,
 			);
 			path = Licenses;
 			sourceTree = "<group>";
@@ -423,7 +420,6 @@
 				FFEB625426C3A38D00FE2DD1 /* APIEndpoints.swift in Sources */,
 				FFEB625A26C3A4CF00FE2DD1 /* DefaultAnimalsRepository.swift in Sources */,
 				FFEB625226C3A1D800FE2DD1 /* AnimalDTO.swift in Sources */,
-				FF15E4F926C4ED13005AD900 /* SafariView.swift in Sources */,
 				FFEB626526C3ACBD00FE2DD1 /* LicensesView.swift in Sources */,
 				FFEB624226C38ECF00FE2DD1 /* AnimalsData.swift in Sources */,
 				FFEB624626C38ECF00FE2DD1 /* AppView.swift in Sources */,

@@ -5,3 +5,13 @@
   Created by nono on 2021/08/11.
   
 */
+
+"Home.Title" = "动物的叫声";
+
+"AboutThisApp.Title" = "关于这个App";
+
+"AboutThisApp.Menu.Version" = "版本";
+
+"AboutThisApp.Menu.Licenses" = "版权信息";
+
+"Licenses.Title" = "版权信息";
