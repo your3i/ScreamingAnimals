@@ -31,7 +31,7 @@ struct AnimalPhotoView: View {
 struct AnimalPhotoView_Previews: PreviewProvider {
     static var previews: some View {
 		let animalImage = URL(string: "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/lion_1.jpg")
-		let animal = Animal(id: "123", name: "animal name", image: animalImage, imageCredit: "credit text", shoutings: [])
+		let animal = Animal(id: "123", name: "animal name", image: animalImage, imageCredit: "credit text", sounds: [])
         AnimalPhotoView(animal: animal)
     }
 }

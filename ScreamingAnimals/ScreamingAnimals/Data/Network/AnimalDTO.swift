@@ -23,7 +23,7 @@ struct AnimalDTO: Decodable {
 	var id: String
 	var name: AnimalNameDTO
 	var images: [AnimalPhotoDTO]
-	var shoutings: [URL]
+	var sounds: [URL]
 }
 
 extension AnimalDTO {
@@ -41,6 +41,6 @@ extension AnimalDTO {
 				break
 			}
 		}
-		return Animal(id: id, name: localizedName, image: image?.url, imageCredit: image?.credit, shoutings: shoutings)
+		return Animal(id: id, name: localizedName, image: image?.url, imageCredit: image?.credit, sounds: sounds)
 	}
 }

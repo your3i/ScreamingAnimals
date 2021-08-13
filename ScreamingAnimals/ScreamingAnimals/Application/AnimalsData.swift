@@ -34,4 +34,15 @@ final class AnimalsData: ObservableObject {
 			.store(in: &cancellables)
 	}
 
+	func sortInAscendingOrder() {
+		animals = animals.sorted { $0.name <= $1.name }
+	}
+
+	func sortInDescendingOrder() {
+		animals = animals.sorted { $0.name >= $1.name }
+	}
+
+	func shuffle() {
+		animals = animals.shuffled()
+	}
 }

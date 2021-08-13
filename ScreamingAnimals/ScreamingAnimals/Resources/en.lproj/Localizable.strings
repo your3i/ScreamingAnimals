@@ -8,6 +8,12 @@
 
 "Home.Title" = "Animal Sounds";
 
+"Home.Menu.InAscendingOrder" = "Sort in ascending order";
+
+"Home.Menu.InDescendingOrder" = "Sort in descending order";
+
+"Home.Menu.Shuffle" = "Shuffle";
+
 "AboutThisApp.Title" = "About This App";
 
 "AboutThisApp.Menu.Version" = "Version";
