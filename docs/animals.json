@@ -4,7 +4,7 @@
 		"name": {
 			"en": "cow",
 			"ja": "ウシ",
-			"zh-hans": "牛"
+			"zh": "牛"
 		},
 		"images": [
 			{
@@ -30,7 +30,7 @@
 		"name": {
 			"en": "dog",
 			"ja": "イヌ",
-			"zh-hans": "狗"
+			"zh": "狗"
 		},
 		"images": [
 			{
@@ -56,7 +56,7 @@
 		"name": {
 			"en": "cat",
 			"ja": "ネコ",
-			"zh-hans": "猫"
+			"zh": "猫"
 		},
 		"images": [
 			{
@@ -73,7 +73,7 @@
 		"name": {
 			"en": "lion",
 			"ja": "ライオン",
-			"zh-hans": "狮子"
+			"zh": "狮子"
 		},
 		"images": [
 			{
@@ -90,7 +90,7 @@
 		"name": {
 			"en": "duck",
 			"ja": "カモ",
-			"zh-hans": "鸭子"
+			"zh": "鸭子"
 		},
 		"images": [
 			{
@@ -107,7 +107,7 @@
 		"name": {
 			"en": "chicken",
 			"ja": "ニワトリ",
-			"zh-hans": "鸡"
+			"zh": "鸡"
 		},
 		"images": [
 			{
@@ -124,7 +124,7 @@
 		"name": {
 			"en": "elephant",
 			"ja": "ゾウ",
-			"zh-hans": "大象"
+			"zh": "大象"
 		},
 		"images": [
 			{
@@ -141,7 +141,7 @@
 		"name": {
 			"en": "monkey",
 			"ja": "サル",
-			"zh-hans": "猴子"
+			"zh": "猴子"
 		},
 		"images": [
 			{
