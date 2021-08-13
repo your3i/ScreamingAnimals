@@ -1,7 +1,11 @@
 [
 	{
 		"id": "1",
-		"name": "cow",
+		"name": {
+			"en": "cow",
+			"ja": "ウシ",
+			"zh": "牛"
+		},
 		"images": [
 			{
 				"url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/cow_1.jpg",
@@ -23,7 +27,11 @@
 	},
 	{
 		"id": "2",
-		"name": "dog",
+		"name": {
+			"en": "dog",
+			"ja": "イヌ",
+			"zh": "狗"
+		},
 		"images": [
 			{
 				"url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/dog_1.jpg",
@@ -45,7 +53,11 @@
 	},
 	{
 		"id": "3",
-		"name": "cat",
+		"name": {
+			"en": "cat",
+			"ja": "ネコ",
+			"zh": "猫"
+		},
 		"images": [
 			{
 				"url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/cat_1.jpg",
@@ -58,7 +70,11 @@
 	},
 	{
 		"id": "4",
-		"name": "lion",
+		"name": {
+			"en": "lion",
+			"ja": "ライオン",
+			"zh": "狮子"
+		},
 		"images": [
 			{
 				"url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/lion_1.jpg",
@@ -71,7 +87,11 @@
 	},
 	{
 		"id": "5",
-		"name": "duck",
+		"name": {
+			"en": "duck",
+			"ja": "カモ",
+			"zh": "鸭子"
+		},
 		"images": [
 			{
 				"url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/duck_1.jpg",
@@ -84,7 +104,11 @@
 	},
 	{
 		"id": "6",
-		"name": "chicken",
+		"name": {
+			"en": "chicken",
+			"ja": "ニワトリ",
+			"zh": "鸡"
+		},
 		"images": [
 			{
 				"url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/chicken_1.jpg",
@@ -97,7 +121,11 @@
 	},
 	{
 		"id": "7",
-		"name": "elephant",
+		"name": {
+			"en": "elephant",
+			"ja": "ゾウ",
+			"zh": "大象"
+		},
 		"images": [
 			{
 				"url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/elephant_1.jpg",
@@ -110,7 +138,11 @@
 	},
 	{
 		"id": "8",
-		"name": "monkey",
+		"name": {
+			"en": "monkey",
+			"ja": "サル",
+			"zh": "猴子"
+		},
 		"images": [
 			{
 				"url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/monkey_1.jpg",

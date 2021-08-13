@@ -25,12 +25,20 @@ struct AppView: View {
 							label: { Image(systemName: "info.circle.fill") }
 						),
 					trailing:
-						Button(
-							action: { print("tapped") },
-							label: {
-								Image(systemName: "line.horizontal.3.decrease.circle")
-							}
-						)
+						HStack {
+							Button(
+								action: { print("tapped") },
+								label: {
+									Image(systemName: "arrow.up.arrow.down.circle")
+								}
+							)
+							Button(
+								action: { print("tapped") },
+								label: {
+									Image(systemName: "line.horizontal.3.decrease.circle")
+								}
+							)
+						}
 				)
         }
     }
