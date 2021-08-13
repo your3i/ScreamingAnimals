@@ -20,7 +20,7 @@
 				"credit": "Photo by Nicklas Toft from Pexels"
 			}
 		],
-		"shoutings": [
+		"sounds": [
 			"https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/cow_1.mp3",
 			"https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/cow_2.mp3"
 		]
@@ -46,7 +46,7 @@
 				"credit": "Photo by Charles from Pexels"
 			}
 		],
-		"shoutings": [
+		"sounds": [
 			"https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/dog_1.mp3",
 			"https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/dog_2.mp3"
 		]
@@ -64,7 +64,7 @@
 				"credit": "Photo by Leonardo de Oliveira from Pexels"
 			}
 		],
-		"shoutings": [
+		"sounds": [
 			"https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/cat_1.mp3"
 		]
 	},
@@ -81,7 +81,7 @@
 				"credit": "Photo by Petr Ganaj from Pexels"
 			}
 		],
-		"shoutings": [
+		"sounds": [
 			"https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/lion_1.mp3"
 		]
 	},
@@ -98,7 +98,7 @@
 				"credit": "Photo by Robert Laszlo from Pexels"
 			}
 		],
-		"shoutings": [
+		"sounds": [
 			"https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/duck_1.mp3"
 		]
 	},
@@ -115,7 +115,7 @@
 				"credit": "Photo by Olya Kobruseva from Pexels"
 			}
 		],
-		"shoutings": [
+		"sounds": [
 			"https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/chicken_1.mp3"
 		]
 	},
@@ -132,7 +132,7 @@
 				"credit": "Photo by Taryn Elliott from Pexels"
 			}
 		],
-		"shoutings": [
+		"sounds": [
 			"https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/elephant_1.mp3"
 		]
 	},
@@ -149,7 +149,7 @@
 				"credit": "Photo by Leonid Danilov from Pexels"
 			}
 		],
-		"shoutings": [
+		"sounds": [
 			"https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/monkey_1.mp3"
 		]
 	}
