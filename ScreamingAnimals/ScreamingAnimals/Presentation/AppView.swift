@@ -9,9 +9,8 @@ import SwiftUI
 import QGrid
 
 struct AppView: View {
-	@EnvironmentObject var animalsData: AnimalsData
 
-	@State private var showingPopover = false
+	@EnvironmentObject var animalsData: AnimalsData
 
     var body: some View {
         NavigationView {
