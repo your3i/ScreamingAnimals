@@ -22,9 +22,11 @@ private func playSound(url: URL) {
 
 struct AnimalView: View {
 
-	let animal: Animal
+	@EnvironmentObject var animalsData: AnimalsData
 
 	@State private var isTapped = false
+
+	let animal: Animal
 
 	private func playAnimalSound() {
 		if let url = animal.sounds.randomElement() {
@@ -43,13 +45,15 @@ struct AnimalView: View {
 			} preview: {
 				AnimalPhotoView(animal: animal)
 			} actions: {
-				let favoriteAction = UIAction(title: "Favorite", image: UIImage(systemName: "star")) { _ in
-					print("favoriteAction tapped")
+				let iconImage = animal.isFavorite ? UIImage(systemName: "star.fill") : UIImage(systemName: "star")
+				let favoriteAction = UIAction(title: NSLocalizedString("Animal.ContextMenu.Action.Favorite", comment: ""), image: iconImage) { _ in
+					if animal.isFavorite {
+						animalsData.removeFavorite(animalID: animal.id)
+					} else {
+						animalsData.addFavorite(animalID: animal.id)
+					}
 				}
-				let playAction = UIAction(title: "Play sound", image: UIImage(systemName: "play")) { _ in
-					playAnimalSound()
-				}
-				return UIMenu(title: "", children: [favoriteAction, playAction])
+				return UIMenu(title: "", children: [favoriteAction])
 			}
 			.scaleEffect(isTapped ? 1.3 : 1.0)
 			.animation(.spring(response: 0.4, dampingFraction: 0.6))

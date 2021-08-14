@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		FF15E50026C549FB005AD900 /* CustomPreviewContextMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF15E4FF26C549FB005AD900 /* CustomPreviewContextMenu.swift */; };
 		FF15E50226C552DC005AD900 /* AnimalPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF15E50126C552DC005AD900 /* AnimalPhotoView.swift */; };
+		FFDDE6AD26C69CFF00D1EE9D /* UserDefaultsFavoritesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDDE6AC26C69CFF00D1EE9D /* UserDefaultsFavoritesStorage.swift */; };
+		FFDDE6AF26C6A73400D1EE9D /* FavoritesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDDE6AE26C6A73400D1EE9D /* FavoritesStorage.swift */; };
+		FFDDE6B126C6A7ED00D1EE9D /* FavoritesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDDE6B026C6A7ED00D1EE9D /* FavoritesRepository.swift */; };
+		FFDDE6B326C6A8A300D1EE9D /* DefaultFavoritesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDDE6B226C6A8A300D1EE9D /* DefaultFavoritesRepository.swift */; };
+		FFDDE6B826C6AB7600D1EE9D /* AddFavoriteUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDDE6B726C6AB7600D1EE9D /* AddFavoriteUseCase.swift */; };
+		FFDDE6BA26C6AE3800D1EE9D /* RemoveFavoriteUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDDE6B926C6AE3800D1EE9D /* RemoveFavoriteUseCase.swift */; };
 		FFEB620926C38DB200FE2DD1 /* ScreamingAnimalsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEB620826C38DB200FE2DD1 /* ScreamingAnimalsApp.swift */; };
 		FFEB621026C38DB500FE2DD1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFEB620F26C38DB500FE2DD1 /* Preview Assets.xcassets */; };
 		FFEB621B26C38DB500FE2DD1 /* ScreamingAnimalsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEB621A26C38DB500FE2DD1 /* ScreamingAnimalsTests.swift */; };
@@ -54,6 +60,12 @@
 /* Begin PBXFileReference section */
 		FF15E4FF26C549FB005AD900 /* CustomPreviewContextMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPreviewContextMenu.swift; sourceTree = "<group>"; };
 		FF15E50126C552DC005AD900 /* AnimalPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalPhotoView.swift; sourceTree = "<group>"; };
+		FFDDE6AC26C69CFF00D1EE9D /* UserDefaultsFavoritesStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsFavoritesStorage.swift; sourceTree = "<group>"; };
+		FFDDE6AE26C6A73400D1EE9D /* FavoritesStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesStorage.swift; sourceTree = "<group>"; };
+		FFDDE6B026C6A7ED00D1EE9D /* FavoritesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesRepository.swift; sourceTree = "<group>"; };
+		FFDDE6B226C6A8A300D1EE9D /* DefaultFavoritesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultFavoritesRepository.swift; sourceTree = "<group>"; };
+		FFDDE6B726C6AB7600D1EE9D /* AddFavoriteUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFavoriteUseCase.swift; sourceTree = "<group>"; };
+		FFDDE6B926C6AE3800D1EE9D /* RemoveFavoriteUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveFavoriteUseCase.swift; sourceTree = "<group>"; };
 		FFEB620526C38DB200FE2DD1 /* ScreamingAnimals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreamingAnimals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFEB620826C38DB200FE2DD1 /* ScreamingAnimalsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreamingAnimalsApp.swift; sourceTree = "<group>"; };
 		FFEB620F26C38DB500FE2DD1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -121,6 +133,24 @@
 				FFEB626D26C3B43A00FE2DD1 /* WebView.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		FFDDE6AB26C69CEE00D1EE9D /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				FFDDE6AC26C69CFF00D1EE9D /* UserDefaultsFavoritesStorage.swift */,
+				FFDDE6AE26C6A73400D1EE9D /* FavoritesStorage.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		FFDDE6B426C6A91700D1EE9D /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				FFDDE6B726C6AB7600D1EE9D /* AddFavoriteUseCase.swift */,
+				FFDDE6B926C6AE3800D1EE9D /* RemoveFavoriteUseCase.swift */,
+			);
+			path = UseCases;
 			sourceTree = "<group>";
 		};
 		FFEB61FC26C38DB200FE2DD1 = {
@@ -198,6 +228,7 @@
 		FFEB623A26C38E8000FE2DD1 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				FFDDE6AB26C69CEE00D1EE9D /* Local */,
 				FFEB625826C3A4B900FE2DD1 /* Repositories */,
 				FFEB625026C3A18E00FE2DD1 /* Network */,
 			);
@@ -207,6 +238,7 @@
 		FFEB623B26C38E8900FE2DD1 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				FFDDE6B426C6A91700D1EE9D /* UseCases */,
 				FFEB625B26C3A73A00FE2DD1 /* Interfaces */,
 				FFEB624726C38EEF00FE2DD1 /* Entities */,
 			);
@@ -247,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				FFEB625626C3A46D00FE2DD1 /* AnimalsRepository.swift */,
+				FFDDE6B026C6A7ED00D1EE9D /* FavoritesRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -255,6 +288,7 @@
 			isa = PBXGroup;
 			children = (
 				FFEB625926C3A4CF00FE2DD1 /* DefaultAnimalsRepository.swift */,
+				FFDDE6B226C6A8A300D1EE9D /* DefaultFavoritesRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -433,10 +467,16 @@
 				FFEB624926C38F1100FE2DD1 /* Animal.swift in Sources */,
 				FF15E50026C549FB005AD900 /* CustomPreviewContextMenu.swift in Sources */,
 				FFEB624326C38ECF00FE2DD1 /* AboutThisAppView.swift in Sources */,
+				FFDDE6AF26C6A73400D1EE9D /* FavoritesStorage.swift in Sources */,
 				FFEB625426C3A38D00FE2DD1 /* APIEndpoints.swift in Sources */,
+				FFDDE6B326C6A8A300D1EE9D /* DefaultFavoritesRepository.swift in Sources */,
+				FFDDE6B126C6A7ED00D1EE9D /* FavoritesRepository.swift in Sources */,
 				FFEB625A26C3A4CF00FE2DD1 /* DefaultAnimalsRepository.swift in Sources */,
+				FFDDE6BA26C6AE3800D1EE9D /* RemoveFavoriteUseCase.swift in Sources */,
 				FFEB625226C3A1D800FE2DD1 /* AnimalDTO.swift in Sources */,
 				FFEB626526C3ACBD00FE2DD1 /* LicensesView.swift in Sources */,
+				FFDDE6AD26C69CFF00D1EE9D /* UserDefaultsFavoritesStorage.swift in Sources */,
+				FFDDE6B826C6AB7600D1EE9D /* AddFavoriteUseCase.swift in Sources */,
 				FFEB624226C38ECF00FE2DD1 /* AnimalsData.swift in Sources */,
 				FFEB624626C38ECF00FE2DD1 /* AppView.swift in Sources */,
 				FFEB625726C3A46D00FE2DD1 /* AnimalsRepository.swift in Sources */,

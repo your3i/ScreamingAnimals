@@ -12,10 +12,12 @@ struct AppView: View {
 
 	@EnvironmentObject var animalsData: AnimalsData
 
+	@State var favoritesOnly = false
+
     var body: some View {
         NavigationView {
 			QGrid(
-				animalsData.animals,
+				animalsData.animals.filter { !favoritesOnly || $0.isFavorite },
 				columns: 3,
 				columnsInLandscape: 4) { AnimalView(animal: $0) }
 				.navigationTitle("Home.Title")
@@ -29,23 +31,27 @@ struct AppView: View {
 						HStack {
 							Menu {
 								Button(action: { animalsData.sortInAscendingOrder() }, label: {
-									Text("Home.Menu.InAscendingOrder")
+									Text("Home.ReorderMenu.InAscendingOrder")
 								})
 								Button(action: { animalsData.sortInDescendingOrder() }, label: {
-									Text("Home.Menu.InDescendingOrder")
+									Text("Home.ReorderMenu.InDescendingOrder")
 								})
 								Button(action: { animalsData.shuffle() }, label: {
-									Text("Home.Menu.Shuffle")
+									Text("Home.ReorderMenu.Shuffle")
 								})
 							} label: {
 								Image(systemName: "arrow.up.arrow.down.circle")
 							}
-							Button(
-								action: { print("tapped") },
-								label: {
-									Image(systemName: "line.horizontal.3.decrease.circle")
-								}
-							)
+							Menu {
+								Button(action: { favoritesOnly = false}, label: {
+									Text("Home.FilterMenu.ShowAll")
+								})
+								Button(action: { favoritesOnly = true }, label: {
+									Text("Home.FilterMenu.ShowFavoritesOnly")
+								})
+							} label: {
+								Image(systemName: "line.horizontal.3.decrease.circle")
+							}
 							.padding(.leading, 16)
 						}
 				)

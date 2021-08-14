@@ -8,11 +8,17 @@
 
 "Home.Title" = "動物たちの鳴き声";
 
-"Home.Menu.InAscendingOrder" = "昇順";
+"Home.ReorderMenu.InAscendingOrder" = "昇順";
 
-"Home.Menu.InDescendingOrder" = "降順";
+"Home.ReorderMenu.InDescendingOrder" = "降順";
 
-"Home.Menu.Shuffle" = "シャッフル";
+"Home.ReorderMenu.Shuffle" = "シャッフル";
+
+"Home.FilterMenu.ShowAll" = "すべて";
+
+"Home.FilterMenu.ShowFavoritesOnly" = "お気に入り";
+
+"Animal.ContextMenu.Action.Favorite" = "お気に入り";
 
 "AboutThisApp.Title" = "このアプリについて";
 

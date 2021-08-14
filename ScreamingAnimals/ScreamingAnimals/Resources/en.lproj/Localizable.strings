@@ -8,11 +8,17 @@
 
 "Home.Title" = "Animal Sounds";
 
-"Home.Menu.InAscendingOrder" = "Sort in ascending order";
+"Home.ReorderMenu.InAscendingOrder" = "Sort in ascending order";
 
-"Home.Menu.InDescendingOrder" = "Sort in descending order";
+"Home.ReorderMenu.InDescendingOrder" = "Sort in descending order";
 
-"Home.Menu.Shuffle" = "Shuffle";
+"Home.ReorderMenu.Shuffle" = "Shuffle";
+
+"Home.FilterMenu.ShowAll" = "All";
+
+"Home.FilterMenu.ShowFavoritesOnly" = "Favorites only";
+
+"Animal.ContextMenu.Action.Favorite" = "Favorite";
 
 "AboutThisApp.Title" = "About This App";
 

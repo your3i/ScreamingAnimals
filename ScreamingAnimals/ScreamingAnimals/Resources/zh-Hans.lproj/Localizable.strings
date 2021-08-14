@@ -8,11 +8,17 @@
 
 "Home.Title" = "动物们的叫声";
 
-"Home.Menu.InAscendingOrder" = "按正序排序";
+"Home.ReorderMenu.InAscendingOrder" = "按正序排序";
 
-"Home.Menu.InDescendingOrder" = "按倒序排序";
+"Home.ReorderMenu.InDescendingOrder" = "按倒序排序";
 
-"Home.Menu.Shuffle" = "乱序";
+"Home.ReorderMenu.Shuffle" = "乱序";
+
+"Home.FilterMenu.ShowAll" = "全部";
+
+"Home.FilterMenu.ShowFavoritesOnly" = "仅收藏";
+
+"Animal.ContextMenu.Action.Favorite" = "收藏";
 
 "AboutThisApp.Title" = "关于这个App";
 

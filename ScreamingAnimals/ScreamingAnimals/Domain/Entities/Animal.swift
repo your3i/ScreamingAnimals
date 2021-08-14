@@ -14,4 +14,5 @@ struct Animal: Equatable, Identifiable {
 	var image: URL?
 	var imageCredit: String?
 	var sounds: [URL]
+	var isFavorite: Bool = false
 }

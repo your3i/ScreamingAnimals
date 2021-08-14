@@ -9,12 +9,15 @@ import SwiftUI
 
 @main
 struct ScreamingAnimalsApp: App {
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
+	@UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
+	@StateObject private var animalsData = AnimalsData()
 
     var body: some Scene {
 		WindowGroup {
 			AppView()
-				.environmentObject(AnimalsData())
+				.environmentObject(animalsData)
 		}
 	}
 }
