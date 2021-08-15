@@ -53,7 +53,10 @@ struct AnimalView: View {
 						animalsData.addFavorite(animalID: animal.id)
 					}
 				}
-				return UIMenu(title: "", children: [favoriteAction])
+				let playAction = UIAction(title: NSLocalizedString("Animal.ContextMenu.Action.Play", comment: ""), image: UIImage(systemName: "play")) { _ in
+					playAnimalSound()
+				}
+				return UIMenu(title: "", children: [favoriteAction, playAction])
 			}
 			.scaleEffect(isTapped ? 1.3 : 1.0)
 			.animation(.spring(response: 0.4, dampingFraction: 0.6))

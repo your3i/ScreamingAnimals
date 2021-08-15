@@ -20,6 +20,8 @@
 
 "Animal.ContextMenu.Action.Favorite" = "收藏";
 
+"Animal.ContextMenu.Action.Play" = "播放";
+
 "AboutThisApp.Title" = "关于这个App";
 
 "AboutThisApp.Menu.Version" = "版本";

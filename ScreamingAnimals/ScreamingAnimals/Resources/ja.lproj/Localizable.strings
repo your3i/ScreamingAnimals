@@ -20,6 +20,8 @@
 
 "Animal.ContextMenu.Action.Favorite" = "お気に入り";
 
+"Animal.ContextMenu.Action.Play" = "再生";
+
 "AboutThisApp.Title" = "このアプリについて";
 
 "AboutThisApp.Menu.Version" = "バージョン";

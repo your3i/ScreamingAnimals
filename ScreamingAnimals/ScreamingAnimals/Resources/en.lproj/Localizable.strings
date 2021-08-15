@@ -20,6 +20,8 @@
 
 "Animal.ContextMenu.Action.Favorite" = "Favorite";
 
+"Animal.ContextMenu.Action.Play" = "Play";
+
 "AboutThisApp.Title" = "About This App";
 
 "AboutThisApp.Menu.Version" = "Version";
