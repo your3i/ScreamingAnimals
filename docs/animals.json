@@ -238,5 +238,178 @@
             "https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/bear_1.mp3",
             "https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/bear_2.mp3"
         ]
+    },
+    {
+        "id": "13",
+        "name": {
+            "en": "owl",
+            "ja": "フクロウ",
+            "zh": "猫头鹰"
+        },
+        "images": [
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/owl_1.jpg",
+                "credit": "Photo by Erik Karits from Pexels"
+            },
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/owl_2.jpg",
+                "credit": "Photo by Ruslan Khmelevsky from Pexels"
+            }
+        ],
+        "sounds": [
+            "https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/owl_1.mp3",
+            "https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/owl_2.mp3"
+        ]
+    },
+    {
+        "id": "14",
+        "name": {
+            "en": "tiger",
+            "ja": "トラ",
+            "zh": "老虎"
+        },
+        "images": [
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/tiger_1.jpg",
+                "credit": "Photo by Erik Karits from Pexels"
+            },
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/tiger_2.jpg",
+                "credit": "Photo by Ruslan Khmelevsky from Pexels"
+            }
+        ],
+        "sounds": [
+            "https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/tiger_1.mp3",
+            "https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/tiger_2.mp3"
+        ]
+    },
+    {
+        "id": "15",
+        "name": {
+            "en": "snake",
+            "ja": "ヘビ",
+            "zh": "蛇"
+        },
+        "images": [
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/snake_1.jpg",
+                "credit": ""
+            },
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/snake_2.jpg",
+                "credit": "Photo by David Selbert from Pexels"
+            }
+        ],
+        "sounds": [
+            "https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/snake_1.mp3",
+            "https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/snake_2.mp3"
+        ]
+    },
+    {
+        "id": "16",
+        "name": {
+            "en": "bee",
+            "ja": "ハチ",
+            "zh": "蜜蜂"
+        },
+        "images": [
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/bee_1.jpg",
+                "credit": "Photo by Hiếu Hoàng from Pexels"
+            },
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/bee_2.jpg",
+                "credit": ""
+            }
+        ],
+        "sounds": [
+            "https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/bee_1.mp3",
+        ]
+    },
+    {
+        "id": "17",
+        "name": {
+            "en": "otter",
+            "ja": "カワウソ",
+            "zh": "水獭"
+        },
+        "images": [
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/otter_1.jpg",
+                "credit": ""
+            },
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/otter_2.jpg",
+                "credit": "Photo by Petr Ganaj from Pexels"
+            }
+        ],
+        "sounds": [
+            "https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/otter_1.mp3",
+        ]
+    },
+    {
+        "id": "18",
+        "name": {
+            "en": "crow",
+            "ja": "カラス",
+            "zh": "乌鸦"
+        },
+        "images": [
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/crow_1.jpg",
+                "credit": "Photo by Freddie Ramm from Pexels"
+            },
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/crow_2.jpg",
+                "credit": "Photo by Ellie Burgin from Pexels"
+            }
+        ],
+        "sounds": [
+            "https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/crow_1.mp3"
+        ]
+    },
+    {
+        "id": "19",
+        "name": {
+            "en": "crocodile",
+            "ja": "クロコダイル",
+            "zh": "鳄鱼"
+        },
+        "images": [
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/crocodile_1.jpg",
+                "credit": ""
+            },
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/crocodile_2.jpg",
+                "credit": "Photo by Jan Venter from Pexels"
+            }
+        ],
+        "sounds": [
+            "https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/crocodile_1.mp3",
+			"https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/crocodile_2.mp3"
+        ]
+    },
+    {
+        "id": "20",
+        "name": {
+            "en": "parrot",
+            "ja": "オウム",
+            "zh": "鹦鹉"
+        },
+        "images": [
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/parrot_1.jpg",
+                "credit": ""
+            },
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/parrot_2.jpg",
+                "credit": ""
+            }
+        ],
+        "sounds": [
+            "https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/crocodile_1.mp3",
+			"https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/crocodile_2.mp3"
+        ]
     }
 ]
