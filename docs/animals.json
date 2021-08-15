@@ -411,5 +411,86 @@
             "https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/parrot_1.mp3",
 			"https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/parrot_2.mp3"
         ]
+    },
+    {
+        "id": "21",
+        "name": {
+            "en": "buffalo",
+            "ja": "バッファロー",
+            "zh": "水牛"
+        },
+        "images": [
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/buffalo_1.jpg",
+                "credit": ""
+            },
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/buffalo_2.jpg",
+                "credit": ""
+            }
+        ],
+        "sounds": [
+            "https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/buffalo_1.mp3"
+        ]
+    },
+    {
+        "id": "22",
+        "name": {
+            "en": "rhinoceros",
+            "ja": "サイ",
+            "zh": "犀牛"
+        },
+        "images": [
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/rhinoceros_1.jpg",
+                "credit": "Photo by Casey Allen from Pexels"
+            },
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/rhinoceros_2.jpg",
+                "credit": ""
+            }
+        ],
+        "sounds": [
+            "https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/rhinoceros_1.mp3"
+        ]
+    },
+    {
+        "id": "23",
+        "name": {
+            "en": "dolphin",
+            "ja": "イルカ",
+            "zh": "海豚"
+        },
+        "images": [
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/dolphin_1.jpg",
+                "credit": "Photo by Daniel Torobekov from Pexels"
+            },
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/dolphin_2.jpg",
+                "credit": ""
+            }
+        ],
+        "sounds": [
+            "https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/dolphin_1.mp3"
+        ]
+    },
+    {
+        "id": "24",
+        "name": {
+            "en": "turkey",
+            "ja": "七面鳥",
+            "zh": "火鸡"
+        },
+        "images": [
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/turkey_1.jpg",
+                "credit": "Photo by ASHISH SHARMA from Pexels"
+            }
+        ],
+        "sounds": [
+            "https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/turkey_1.mp3",
+			"https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/turkey_2.mp3"
+        ]
     }
 ]
