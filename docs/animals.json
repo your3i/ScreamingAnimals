@@ -561,23 +561,23 @@
     {
         "id": "28",
         "name": {
-            "en": "bobcat",
-            "ja": "ボブキャット",
+            "en": "lynx",
+            "ja": "リンクス",
             "zh": "山猫"
         },
         "images": [
             {
-                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/bobcat_1.jpg",
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/lynx_1.jpg",
                 "credit": "Photo by David Selbert from Pexels"
             },
             {
-                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/bobcat_2.jpg",
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/lynx_2.jpg",
                 "credit": "Photo by David Selbert from Pexels"
             }
         ],
         "sounds": [
-            "https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/bobcat_1.mp3",
-			"https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/bobcat_2.mp3"
+            "https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/lynx_1.mp3",
+			"https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/lynx_2.mp3"
         ]
     },
     {
