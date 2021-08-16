@@ -16,7 +16,18 @@ struct LicensesView: View {
 					VStack(alignment: .leading) {
 						Text("ZAPSPLAT")
 						Spacer()
-						Text("Sound effects obtained from https://www.zapsplat.com")
+						Text("Some of the sound effects obtained from https://www.zapsplat.com")
+							.font(.caption2)
+							.foregroundColor(.gray)
+					}
+				})
+			Link(
+				destination: URL(string: "https://www.freesoundeffects.com/")!,
+				label: {
+					VStack(alignment: .leading) {
+						Text("Free Sound Effects")
+						Spacer()
+						Text("Some of the sound effects obtained from https://www.freesoundeffects.com")
 							.font(.caption2)
 							.foregroundColor(.gray)
 					}
