@@ -492,5 +492,246 @@
             "https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/turkey_1.mp3",
 			"https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/turkey_2.mp3"
         ]
+    },
+    {
+        "id": "25",
+        "name": {
+            "en": "whale",
+            "ja": "クジラ",
+            "zh": "鲸"
+        },
+        "images": [
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/whale_1.jpg",
+                "credit": ""
+            },
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/whale_2.jpg",
+                "credit": "Photo by Andre Estevez from Pexels"
+            }
+        ],
+        "sounds": [
+            "https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/whale_1.mp3"
+        ]
+    },
+    {
+        "id": "26",
+        "name": {
+            "en": "seal",
+            "ja": "アザラシ",
+            "zh": "海豹"
+        },
+        "images": [
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/seal_1.jpg",
+                "credit": ""
+            },
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/seal_2.jpg",
+                "credit": "Photo by Elianne Dipp from Pexels"
+            }
+        ],
+        "sounds": [
+            "https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/seal_1.mp3",
+			"https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/seal_2.mp3"
+        ]
+    },
+    {
+        "id": "27",
+        "name": {
+            "en": "bat",
+            "ja": "コウモリ",
+            "zh": "蝙蝠"
+        },
+        "images": [
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/bat_1.jpg",
+                "credit": "Photo by HitchHike from Pexels"
+            },
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/bat_2.jpg",
+                "credit": "Photo by Miriam Fischer from Pexels"
+            }
+        ],
+        "sounds": [
+            "https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/bat_1.mp3",
+			"https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/bat_2.mp3"
+        ]
+    },
+    {
+        "id": "28",
+        "name": {
+            "en": "bobcat",
+            "ja": "ボブキャット",
+            "zh": "山猫"
+        },
+        "images": [
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/bobcat_1.jpg",
+                "credit": "Photo by David Selbert from Pexels"
+            },
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/bobcat_2.jpg",
+                "credit": "Photo by David Selbert from Pexels"
+            }
+        ],
+        "sounds": [
+            "https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/bobcat_1.mp3",
+			"https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/bobcat_2.mp3"
+        ]
+    },
+    {
+        "id": "29",
+        "name": {
+            "en": "camel",
+            "ja": "ラクダ",
+            "zh": "骆驼"
+        },
+        "images": [
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/camel_1.jpg",
+                "credit": "Photo by Frans Van Heerden from Pexels"
+            },
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/camel_2.jpg",
+                "credit": "Photo by Dana Cetojevic from Pexels"
+            }
+        ],
+        "sounds": [
+            "https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/camel_1.mp3",
+			"https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/camel_2.mp3"
+        ]
+    },
+    {
+        "id": "30",
+        "name": {
+            "en": "cheetah",
+            "ja": "チーター",
+            "zh": "猎豹"
+        },
+        "images": [
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/cheetah_1.jpg",
+                "credit": "Photo by Piet Bakker from Pexels"
+            },
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/cheetah_2.jpg",
+                "credit": ""
+            }
+        ],
+        "sounds": [
+            "https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/cheetah_1.mp3",
+			"https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/cheetah_2.mp3"
+        ]
+    },
+    {
+        "id": "31",
+        "name": {
+            "en": "chipmonk",
+            "ja": "シマリス",
+            "zh": "花栗鼠"
+        },
+        "images": [
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/chipmonk_1.jpg",
+                "credit": ""
+            },
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/chipmonk_2.jpg",
+                "credit": ""
+            }
+        ],
+        "sounds": [
+            "https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/chipmonk_1.mp3",
+			"https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/chipmonk_2.mp3"
+        ]
+    },
+    {
+        "id": "32",
+        "name": {
+            "en": "cougar",
+            "ja": "クーガー",
+            "zh": "美洲狮"
+        },
+        "images": [
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/cougar_1.jpg",
+                "credit": ""
+            },
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/cougar_2.jpg",
+                "credit": "Photo by Andrew Patrick from Pexels"
+            }
+        ],
+        "sounds": [
+            "https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/cougar_1.mp3",
+			"https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/cougar_2.mp3"
+        ]
+    },
+    {
+        "id": "33",
+        "name": {
+            "en": "wolf",
+            "ja": "オオカミ",
+            "zh": "狼"
+        },
+        "images": [
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/wolf_1.jpg",
+                "credit": ""
+            },
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/wolf_2.jpg",
+                "credit": ""
+            }
+        ],
+        "sounds": [
+            "https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/wolf_1.mp3",
+			"https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/wolf_2.mp3"
+        ]
+    },
+    {
+        "id": "34",
+        "name": {
+            "en": "hyena",
+            "ja": "ハイエナ",
+            "zh": "鬣狗"
+        },
+        "images": [
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/hyena_1.jpg",
+                "credit": ""
+            },
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/hyena_2.jpg",
+                "credit": "Photo by Phillip Visser from Pexels"
+            }
+        ],
+        "sounds": [
+            "https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/hyena_1.mp3",
+			"https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/hyena_2.mp3"
+        ]
+    },
+    {
+        "id": "35",
+        "name": {
+            "en": "lemur",
+            "ja": "キツネザル",
+            "zh": "狐猴"
+        },
+        "images": [
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/lemur_1.jpg",
+                "credit": "Photo by Magda Ehlers from Pexels"
+            },
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/lemur_2.jpg",
+                "credit": "Photo by Jimmy Chan from Pexels"
+            }
+        ],
+        "sounds": [
+            "https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/lemur_1.mp3",
+			"https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/lemur_2.mp3"
+        ]
     }
 ]
