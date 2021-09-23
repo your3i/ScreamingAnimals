@@ -25,7 +25,7 @@ struct AppView: View {
 					leading:
 						NavigationLink(
 							destination: AboutThisAppView(),
-							label: { Image(systemName: "info.circle.fill") }
+							label: { Image(systemName: "info.circle") }
 						),
 					trailing:
 						HStack {
