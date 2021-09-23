@@ -45,15 +45,10 @@ struct AnimalView: View {
 			} preview: {
 				AnimalPhotoView(animal: animal)
 			} actions: {
-				let iconImage = animal.isFavorite ? UIImage(systemName: "star.fill") : UIImage(systemName: "star")
-				let favoriteAction = UIAction(title: NSLocalizedString("Animal.ContextMenu.Action.Favorite", comment: ""), image: iconImage) { _ in
-					if animal.isFavorite {
-						animalsData.removeFavorite(animalID: animal.id)
-					} else {
-						animalsData.addFavorite(animalID: animal.id)
-					}
+				let favoriteAction = UIAction(title: NSLocalizedString("Animal.ContextMenu.Action.Favorite", comment: "")) { _ in
+					animalsData.toggleFavorite(animalID: animal.id)
 				}
-				let playAction = UIAction(title: NSLocalizedString("Animal.ContextMenu.Action.Play", comment: ""), image: UIImage(systemName: "play")) { _ in
+				let playAction = UIAction(title: NSLocalizedString("Animal.ContextMenu.Action.Play", comment: "")) { _ in
 					playAnimalSound()
 				}
 				return UIMenu(title: "", children: [favoriteAction, playAction])
@@ -67,10 +62,16 @@ struct AnimalView: View {
 					isTapped.toggle()
 				}
 			}
-			Text(animal.name)
-				.font(.caption)
-				.foregroundColor(Color("Text"))
-				.padding(.bottom, 8)
+			HStack {
+				Text(animal.name)
+					.foregroundColor(Color("Text"))
+				if animal.isFavorite {
+					Image(systemName: "star.fill")
+						.imageScale(.small)
+						.foregroundColor(Color("Brand"))
+				}
+			}
+			.padding(.bottom, 8)
 		}
     }
 }

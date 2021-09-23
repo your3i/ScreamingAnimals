@@ -56,6 +56,15 @@ final class AnimalsData: ObservableObject {
 		animals = animals.shuffled()
 	}
 
+	func toggleFavorite(animalID: String) {
+		let index = animals.firstIndex(where: { $0.id == animalID })!
+		if animals[index].isFavorite {
+			removeFavorite(animalID: animalID)
+		} else {
+			addFavorite(animalID: animalID)
+		}
+	}
+
 	func addFavorite(animalID: String) {
 		let useCase = DefaultAddFavoriteUseCase(favoritesRepository: favoritesRepository)
 		useCase.execute(animalID: animalID)
