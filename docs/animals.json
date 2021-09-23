@@ -733,5 +733,181 @@
             "https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/lemur_1.mp3",
 			"https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/lemur_2.mp3"
         ]
+    },
+    {
+        "id": "36",
+        "name": {
+            "en": "raccoon",
+            "ja": "ラクーン",
+            "zh": "浣熊"
+        },
+        "images": [
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/raccoon_1.jpg",
+                "credit": ""
+            },
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/raccoon_2.jpg",
+                "credit": ""
+            }
+        ],
+        "sounds": [
+            "https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/raccoon_1.mp3",
+			"https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/raccoon_2.mp3"
+        ]
+    },
+    {
+        "id": "37",
+        "name": {
+            "en": "squirrel",
+            "ja": "リス",
+            "zh": "松鼠"
+        },
+        "images": [
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/squirrel_1.jpg",
+                "credit": "Photo by Skyler Ewing from Pexels"
+            },
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/squirrel_2.jpg",
+                "credit": "Photo by Skyler Ewing from Pexels"
+            }
+        ],
+        "sounds": [
+            "https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/squirrel_1.mp3",
+			"https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/squirrel_2.mp3"
+        ]
+    },
+    {
+        "id": "38",
+        "name": {
+            "en": "penguin",
+            "ja": "ペンギン",
+            "zh": "企鹅"
+        },
+        "images": [
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/penguin_1.jpg",
+                "credit": "Photo by Taryn Elliott from Pexels"
+            },
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/penguin_2.jpg",
+                "credit": "Photo by Vladimir Blyufer from Pexels"
+            }
+        ],
+        "sounds": [
+            "https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/penguin_1.mp3",
+			"https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/penguin_2.mp3"
+        ]
+    },
+    {
+        "id": "39",
+        "name": {
+            "en": "zebra",
+            "ja": "シマウマ",
+            "zh": "斑马"
+        },
+        "images": [
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/zebra_1.jpg",
+                "credit": "Photo by Adriaan Greyling from Pexels"
+            },
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/zebra_2.jpg",
+                "credit": "Photo by Magda Ehlers from Pexels"
+            }
+        ],
+        "sounds": [
+            "https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/zebra_1.mp3",
+			"https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/zebra_2.mp3"
+        ]
+    },
+    {
+        "id": "40",
+        "name": {
+            "en": "prairie dog",
+            "ja": "プレーリードッグ",
+            "zh": "土拨鼠"
+        },
+        "images": [
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/prairie_dog_1.jpg",
+                "credit": ""
+            },
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/prairie_dog_2.jpg",
+                "credit": "Photo by Petr Ganaj from Pexels"
+            }
+        ],
+        "sounds": [
+            "https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/prairie_dog_1.mp3",
+			"https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/prairie_dog_2.mp3"
+        ]
+    },
+    {
+        "id": "41",
+        "name": {
+            "en": "hippopotamus",
+            "ja": "カバ",
+            "zh": "河马"
+        },
+        "images": [
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/hippopotamus_1.jpg",
+                "credit": "Photo by Roger Brown from Pexels"
+            },
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/hippopotamus_2.jpg",
+                "credit": "Photo by Javier Escobar from Pexels"
+            }
+        ],
+        "sounds": [
+            "https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/hippopotamus_1.mp3",
+			"https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/hippopotamus_2.mp3"
+        ]
+    },
+    {
+        "id": "42",
+        "name": {
+            "en": "guinea pig",
+            "ja": "モルモット",
+            "zh": "豚鼠"
+        },
+        "images": [
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/guinea_pig_1.jpg",
+                "credit": ""
+            },
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/guinea_pig_2.jpg",
+                "credit": "Photo by Faris Subriun from Pexels"
+            }
+        ],
+        "sounds": [
+            "https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/guinea_pig_1.mp3",
+			"https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/guinea_pig_2.mp3"
+        ]
+    },
+    {
+        "id": "43",
+        "name": {
+            "en": "pig",
+            "ja": "ブタ",
+            "zh": "猪"
+        },
+        "images": [
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/pig_1.jpg",
+                "credit": ""
+            },
+            {
+                "url": "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/pig_2.jpg",
+                "credit": "Photo by Barbara Barbosa from Pexels"
+            }
+        ],
+        "sounds": [
+            "https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/pig_1.mp3",
+			"https://github.com/your3i/ScreamingAnimals/raw/main/docs/resources/pig_2.mp3"
+        ]
     }
 ]
