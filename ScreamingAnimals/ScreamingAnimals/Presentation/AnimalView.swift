@@ -11,14 +11,10 @@ import SwiftUI
 
 private var player: AVPlayer?
 
-private func playSound(url: URL) {
-	player?.cancelPendingPrerolls()
-	player = nil
-	let playerItem = AVPlayerItem(url: url)
-	player = AVPlayer(playerItem: playerItem)
-	player?.volume = 1.0
-	player?.play()
-}
+private var playerObserver1: NSObjectProtocol?
+
+private var playerObserver2: NSObjectProtocol?
+
 
 struct AnimalView: View {
 
@@ -26,11 +22,46 @@ struct AnimalView: View {
 
 	@State private var isTapped = false
 
+	@State private var isPlaying = false
+
 	let animal: Animal
 
-	private func playAnimalSound() {
+	private func playAnimalSoundIfNeeded() {
+		guard !isPlaying else {
+			stopPlaying()
+			isPlaying = false
+			return
+		}
 		if let url = animal.sounds.randomElement() {
 			playSound(url: url)
+			isPlaying = true
+		}
+	}
+
+	private func stopPlaying() {
+		player?.pause()
+		player?.cancelPendingPrerolls()
+		player = nil
+		if let observer = playerObserver1{
+			NotificationCenter.default.removeObserver(observer)
+		}
+		if let observer = playerObserver2{
+			NotificationCenter.default.removeObserver(observer)
+		}
+	}
+
+	private func playSound(url: URL) {
+		player?.cancelPendingPrerolls()
+		player = nil
+		let playerItem = AVPlayerItem(url: url)
+		player = AVPlayer(playerItem: playerItem)
+		player?.volume = 1.0
+		player?.play()
+		playerObserver1 = NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime, object: player?.currentItem, queue: .main) { _ in
+			isPlaying = false
+		}
+		playerObserver2 = NotificationCenter.default.addObserver(forName: .AVPlayerItemFailedToPlayToEndTime, object: player?.currentItem, queue: .main) { _ in
+			isPlaying = false
 		}
 	}
 
@@ -49,14 +80,14 @@ struct AnimalView: View {
 					animalsData.toggleFavorite(animalID: animal.id)
 				}
 				let playAction = UIAction(title: NSLocalizedString("Animal.ContextMenu.Action.Play", comment: "")) { _ in
-					playAnimalSound()
+					playAnimalSoundIfNeeded()
 				}
 				return UIMenu(title: "", children: [favoriteAction, playAction])
 			}
 			.scaleEffect(isTapped ? 1.3 : 1.0)
 			.animation(.spring(response: 0.4, dampingFraction: 0.6))
 			.onTapGesture {
-				playAnimalSound()
+				playAnimalSoundIfNeeded()
 				isTapped.toggle()
 				DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
 					isTapped.toggle()
@@ -65,7 +96,11 @@ struct AnimalView: View {
 			HStack {
 				Text(animal.name)
 					.foregroundColor(Color("Text"))
-				if animal.isFavorite {
+				if isPlaying {
+					Image(systemName: "play.circle.fill")
+						.imageScale(.small)
+						.foregroundColor(Color("Brand"))
+				} else if animal.isFavorite {
 					Image(systemName: "star.fill")
 						.imageScale(.small)
 						.foregroundColor(Color("Brand"))
