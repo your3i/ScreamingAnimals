@@ -20,6 +20,18 @@ struct AboutThisAppView: View {
 				label: {
 					Text("AboutThisApp.Menu.Licenses")
 				})
+			NavigationLink(
+				destination: WebView(url: URL(string: "https://screaming-animals.glitch.me/privacy-policy.html")!)
+					.navigationTitle("AboutThisApp.Menu.PrivacyPolicy"),
+				label: {
+					Text("AboutThisApp.Menu.PrivacyPolicy")
+				})
+			NavigationLink(
+				destination: WebView(url: URL(string: "https://screaming-animals.glitch.me/terms_conditions.html")!)
+					.navigationTitle("AboutThisApp.Menu.TermsConditions"),
+				label: {
+					Text("AboutThisApp.Menu.TermsConditions")
+				})
 		}
 		.navigationTitle(Text("AboutThisApp.Title"))
     }
