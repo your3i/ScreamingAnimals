@@ -7,33 +7,43 @@
 
 import SwiftUI
 
-fileprivate var cellWidth: CGFloat = {
-	if UIDevice.current.userInterfaceIdiom == .phone {
-		return 92
-	}
-	return 160
-}()
-
 struct AppView: View {
 
 	@EnvironmentObject var animalsData: AnimalsData
 
 	@State var favoritesOnly = false
 
-	private var columns = [
-		GridItem(.adaptive(minimum: cellWidth, maximum: cellWidth))
-	]
+	private var colWidth: CGFloat {
+		let colCount: Int = {
+			if UIDevice.current.userInterfaceIdiom == .phone {
+				return 3
+			} else {
+				return 4
+			}
+		}()
+
+		let screenWidth: CGFloat = {
+			if UIDevice.current.orientation == .landscapeLeft || UIDevice.current.orientation == .landscapeRight {
+				return max(UIScreen.main.bounds.width, UIScreen.main.bounds.height)
+			} else {
+				return min(UIScreen.main.bounds.width, UIScreen.main.bounds.height)
+			}
+		}()
+
+		return floor(Double(screenWidth - 32) / Double(colCount))
+	}
 
     var body: some View {
-        NavigationView {
+		NavigationView {
 			ScrollView {
-				LazyVGrid(columns: columns) {
+				let width = colWidth
+				LazyVGrid(columns: [GridItem(.adaptive(minimum: width, maximum: width), spacing: nil)]) {
 					ForEach(animalsData.animals) {
-						AnimalView(animal: $0, cellWidth: cellWidth)
+						AnimalView(animal: $0, cellWidth: width)
 					}
 				}
-				.padding(.horizontal, 4)
 			}
+			.padding(.horizontal, 8.0)
 			.navigationTitle("Home.Title")
 			.navigationBarItems(
 				leading:
@@ -69,7 +79,7 @@ struct AppView: View {
 						.padding(.leading, 16)
 					}
 			)
-        }
+		}
 		.navigationViewStyle(StackNavigationViewStyle())
     }
 }

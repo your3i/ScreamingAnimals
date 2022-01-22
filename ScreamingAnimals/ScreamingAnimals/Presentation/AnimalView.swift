@@ -71,7 +71,7 @@ struct AnimalView: View {
 		VStack {
 			CustomPreviewContextMenu {
 				KFImage(animal.image)
-					.resizing(referenceSize: CGSize(width: cellWidth, height: cellWidth))
+					.resizing(referenceSize: CGSize(width: cellWidth - 6, height: cellWidth - 6))
 					.clipShape(Circle())
 					.shadow(color: .black, radius: 2)
 			} preview: {
@@ -86,7 +86,7 @@ struct AnimalView: View {
 				return UIMenu(title: "", children: [favoriteAction, playAction])
 			}
 			.scaleEffect(isTapped ? 1.3 : 1.0)
-			.animation(.spring(response: 0.4, dampingFraction: 0.6))
+			.animation(isTapped ? .spring(response: 0.2, dampingFraction: 0.6) : .none)
 			.onTapGesture {
 				playAnimalSoundIfNeeded()
 				isTapped.toggle()
