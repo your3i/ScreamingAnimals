@@ -7,6 +7,13 @@
 
 import SwiftUI
 
+fileprivate var cellWidth: CGFloat = {
+	if UIDevice.current.userInterfaceIdiom == .phone {
+		return 92
+	}
+	return 160
+}()
+
 struct AppView: View {
 
 	@EnvironmentObject var animalsData: AnimalsData
@@ -14,7 +21,7 @@ struct AppView: View {
 	@State var favoritesOnly = false
 
 	private var columns = [
-		GridItem(.adaptive(minimum: 92, maximum: 92))
+		GridItem(.adaptive(minimum: cellWidth, maximum: cellWidth))
 	]
 
     var body: some View {
@@ -22,7 +29,7 @@ struct AppView: View {
 			ScrollView {
 				LazyVGrid(columns: columns) {
 					ForEach(animalsData.animals) {
-						AnimalView(animal: $0)
+						AnimalView(animal: $0, cellWidth: cellWidth)
 					}
 				}
 				.padding(.horizontal, 4)
@@ -63,6 +70,7 @@ struct AppView: View {
 					}
 			)
         }
+		.navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

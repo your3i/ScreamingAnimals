@@ -26,6 +26,8 @@ struct AnimalView: View {
 
 	let animal: Animal
 
+	let cellWidth: CGFloat
+
 	private func playAnimalSoundIfNeeded() {
 		guard !isPlaying else {
 			stopPlaying()
@@ -69,7 +71,7 @@ struct AnimalView: View {
 		VStack {
 			CustomPreviewContextMenu {
 				KFImage(animal.image)
-					.resizing(referenceSize: CGSize(width: 92, height: 92))
+					.resizing(referenceSize: CGSize(width: cellWidth, height: cellWidth))
 					.clipShape(Circle())
 					.shadow(color: .black, radius: 2)
 			} preview: {
@@ -115,6 +117,6 @@ struct AnimalView_Previews: PreviewProvider {
     static var previews: some View {
 		let animalImage = URL(string: "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/lion_1.jpg")
 		let animal = Animal(id: "123", name: "animal name", image: animalImage, imageCredit: "credit text", sounds: [])
-		AnimalView(animal: animal)
+		AnimalView(animal: animal, cellWidth: 92)
     }
 }
