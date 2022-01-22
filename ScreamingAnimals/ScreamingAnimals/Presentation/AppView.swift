@@ -14,7 +14,7 @@ struct AppView: View {
 	@State var favoritesOnly = false
 
 	private var columns = [
-		GridItem(.adaptive(minimum: 80, maximum: 120))
+		GridItem(.adaptive(minimum: 92, maximum: 92))
 	]
 
     var body: some View {

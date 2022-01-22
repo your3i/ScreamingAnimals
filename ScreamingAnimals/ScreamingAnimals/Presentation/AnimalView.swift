@@ -67,31 +67,31 @@ struct AnimalView: View {
 
     var body: some View {
 		VStack {
-				CustomPreviewContextMenu {
-					KFImage(animal.image)
-						.resizing(referenceSize: CGSize(width: 100, height: 100))
-						.clipShape(Circle())
-						.shadow(color: .black, radius: 2)
-				} preview: {
-					AnimalPhotoView(animal: animal)
-				} actions: {
-					let favoriteAction = UIAction(title: NSLocalizedString("Animal.ContextMenu.Action.Favorite", comment: "")) { _ in
-						animalsData.toggleFavorite(animalID: animal.id)
-					}
-					let playAction = UIAction(title: NSLocalizedString("Animal.ContextMenu.Action.Play", comment: "")) { _ in
-						playAnimalSoundIfNeeded()
-					}
-					return UIMenu(title: "", children: [favoriteAction, playAction])
+			CustomPreviewContextMenu {
+				KFImage(animal.image)
+					.resizing(referenceSize: CGSize(width: 92, height: 92))
+					.clipShape(Circle())
+					.shadow(color: .black, radius: 2)
+			} preview: {
+				AnimalPhotoView(animal: animal)
+			} actions: {
+				let favoriteAction = UIAction(title: NSLocalizedString("Animal.ContextMenu.Action.Favorite", comment: "")) { _ in
+					animalsData.toggleFavorite(animalID: animal.id)
 				}
-				.scaleEffect(isTapped ? 1.3 : 1.0)
-				.animation(.spring(response: 0.4, dampingFraction: 0.6))
-				.onTapGesture {
+				let playAction = UIAction(title: NSLocalizedString("Animal.ContextMenu.Action.Play", comment: "")) { _ in
 					playAnimalSoundIfNeeded()
-					isTapped.toggle()
-					DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-						isTapped.toggle()
-					}
 				}
+				return UIMenu(title: "", children: [favoriteAction, playAction])
+			}
+			.scaleEffect(isTapped ? 1.3 : 1.0)
+			.animation(.spring(response: 0.4, dampingFraction: 0.6))
+			.onTapGesture {
+				playAnimalSoundIfNeeded()
+				isTapped.toggle()
+				DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+					isTapped.toggle()
+				}
+			}
 			HStack {
 				Text(animal.name)
 					.foregroundColor(Color("Text"))
@@ -108,7 +108,7 @@ struct AnimalView: View {
 			}
 			.padding(.bottom, 8)
 		}
-    }
+	}
 }
 
 struct AnimalView_Previews: PreviewProvider {

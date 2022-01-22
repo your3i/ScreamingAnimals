@@ -61,6 +61,7 @@ struct CustomPreviewContextMenuHelper<Content: View, Preview: View>: UIViewRepre
 		view.backgroundColor = .clear
 
 		let hostView = UIHostingController(rootView: content)
+		hostView.view.backgroundColor = .clear
 		hostView.view.translatesAutoresizingMaskIntoConstraints = false
 		let constraints = [
 			hostView.view.topAnchor.constraint(equalTo: view.topAnchor),
@@ -70,6 +71,7 @@ struct CustomPreviewContextMenuHelper<Content: View, Preview: View>: UIViewRepre
 			hostView.view.widthAnchor.constraint(equalTo: view.widthAnchor),
 			hostView.view.heightAnchor.constraint(equalTo: view.heightAnchor)
 		]
+
 		view.addSubview(hostView.view)
 		view.addConstraints(constraints)
 
