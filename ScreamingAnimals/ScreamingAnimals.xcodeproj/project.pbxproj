@@ -20,7 +20,6 @@
 		FFEB621B26C38DB500FE2DD1 /* ScreamingAnimalsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEB621A26C38DB500FE2DD1 /* ScreamingAnimalsTests.swift */; };
 		FFEB622626C38DB500FE2DD1 /* ScreamingAnimalsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEB622526C38DB500FE2DD1 /* ScreamingAnimalsUITests.swift */; };
 		FFEB623526C38E2700FE2DD1 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FFEB623426C38E2700FE2DD1 /* Kingfisher */; };
-		FFEB623826C38E4000FE2DD1 /* QGrid in Frameworks */ = {isa = PBXBuildFile; productRef = FFEB623726C38E4000FE2DD1 /* QGrid */; };
 		FFEB624226C38ECF00FE2DD1 /* AnimalsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEB623D26C38ECF00FE2DD1 /* AnimalsData.swift */; };
 		FFEB624326C38ECF00FE2DD1 /* AboutThisAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEB623E26C38ECF00FE2DD1 /* AboutThisAppView.swift */; };
 		FFEB624426C38ECF00FE2DD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEB623F26C38ECF00FE2DD1 /* AppDelegate.swift */; };
@@ -104,7 +103,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFEB623826C38E4000FE2DD1 /* QGrid in Frameworks */,
 				FFEB623526C38E2700FE2DD1 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,7 +336,6 @@
 			name = ScreamingAnimals;
 			packageProductDependencies = (
 				FFEB623426C38E2700FE2DD1 /* Kingfisher */,
-				FFEB623726C38E4000FE2DD1 /* QGrid */,
 			);
 			productName = ScreamingAnimals;
 			productReference = FFEB620526C38DB200FE2DD1 /* ScreamingAnimals.app */;
@@ -856,11 +853,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FFEB623326C38E2700FE2DD1 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
-		};
-		FFEB623726C38E4000FE2DD1 /* QGrid */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FFEB623626C38E4000FE2DD1 /* XCRemoteSwiftPackageReference "QGrid" */;
-			productName = QGrid;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
