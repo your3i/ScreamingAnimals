@@ -66,36 +66,36 @@ struct AnimalView: View {
 	}
 
     var body: some View {
-		VStack() {
-			CustomPreviewContextMenu {
-				KFImage(animal.image)
-					.resizing(referenceSize: CGSize(width: 100, height: 100), mode: .aspectFill)
-					.clipShape(Circle())
-					.shadow(color: .black, radius: 2)
-					.frame(width: 120, height: 120)
-			} preview: {
-				AnimalPhotoView(animal: animal)
-			} actions: {
-				let favoriteAction = UIAction(title: NSLocalizedString("Animal.ContextMenu.Action.Favorite", comment: "")) { _ in
-					animalsData.toggleFavorite(animalID: animal.id)
+		VStack {
+				CustomPreviewContextMenu {
+					KFImage(animal.image)
+						.resizing(referenceSize: CGSize(width: 100, height: 100))
+						.clipShape(Circle())
+						.shadow(color: .black, radius: 2)
+				} preview: {
+					AnimalPhotoView(animal: animal)
+				} actions: {
+					let favoriteAction = UIAction(title: NSLocalizedString("Animal.ContextMenu.Action.Favorite", comment: "")) { _ in
+						animalsData.toggleFavorite(animalID: animal.id)
+					}
+					let playAction = UIAction(title: NSLocalizedString("Animal.ContextMenu.Action.Play", comment: "")) { _ in
+						playAnimalSoundIfNeeded()
+					}
+					return UIMenu(title: "", children: [favoriteAction, playAction])
 				}
-				let playAction = UIAction(title: NSLocalizedString("Animal.ContextMenu.Action.Play", comment: "")) { _ in
+				.scaleEffect(isTapped ? 1.3 : 1.0)
+				.animation(.spring(response: 0.4, dampingFraction: 0.6))
+				.onTapGesture {
 					playAnimalSoundIfNeeded()
-				}
-				return UIMenu(title: "", children: [favoriteAction, playAction])
-			}
-			.scaleEffect(isTapped ? 1.3 : 1.0)
-			.animation(.spring(response: 0.4, dampingFraction: 0.6))
-			.onTapGesture {
-				playAnimalSoundIfNeeded()
-				isTapped.toggle()
-				DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
 					isTapped.toggle()
+					DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+						isTapped.toggle()
+					}
 				}
-			}
 			HStack {
 				Text(animal.name)
 					.foregroundColor(Color("Text"))
+					.lineLimit(1)
 				if isPlaying {
 					Image(systemName: "play.circle.fill")
 						.imageScale(.small)
