@@ -35,7 +35,7 @@ struct AppView: View {
 
     var body: some View {
 		NavigationView {
-			ScrollView {
+			ScrollView(showsIndicators: false) {
 				if animalsData.animals.isEmpty {
 					ProgressView()
 						.padding(.top, 20)
