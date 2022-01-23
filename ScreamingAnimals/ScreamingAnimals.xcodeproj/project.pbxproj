@@ -411,7 +411,6 @@
 			mainGroup = FFEB61FC26C38DB200FE2DD1;
 			packageReferences = (
 				FFEB623326C38E2700FE2DD1 /* XCRemoteSwiftPackageReference "Kingfisher" */,
-				FFEB623626C38E4000FE2DD1 /* XCRemoteSwiftPackageReference "QGrid" */,
 			);
 			productRefGroup = FFEB620626C38DB200FE2DD1 /* Products */;
 			projectDirPath = "";
@@ -836,14 +835,6 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 6.3.1;
-			};
-		};
-		FFEB623626C38E4000FE2DD1 /* XCRemoteSwiftPackageReference "QGrid" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Q-Mobile/QGrid";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.4;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
