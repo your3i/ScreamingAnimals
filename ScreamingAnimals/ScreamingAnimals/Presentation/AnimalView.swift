@@ -86,7 +86,7 @@ struct AnimalView: View {
 				return UIMenu(title: "", children: [favoriteAction, playAction])
 			}
 			.scaleEffect(isTapped ? 1.3 : 1.0)
-			.animation(isTapped ? .spring(response: 0.2, dampingFraction: 0.6) : .none)
+			.animation(.spring(response: 0.2, dampingFraction: 0.6), value: isTapped)
 			.onTapGesture {
 				playAnimalSoundIfNeeded()
 				isTapped.toggle()
