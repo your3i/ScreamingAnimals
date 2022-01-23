@@ -36,6 +36,10 @@ struct AppView: View {
     var body: some View {
 		NavigationView {
 			ScrollView {
+				if animalsData.animals.isEmpty {
+					ProgressView()
+						.padding(.top, 20)
+				}
 				let width = colWidth
 				LazyVGrid(columns: [GridItem(.adaptive(minimum: width, maximum: width), spacing: nil)]) {
 					ForEach(animalsData.animals) {
