@@ -9,62 +9,22 @@ import AVFoundation
 import Kingfisher
 import SwiftUI
 
-private var player: AVPlayer?
-
-private var playerObserver1: NSObjectProtocol?
-
-private var playerObserver2: NSObjectProtocol?
-
-
 struct AnimalView: View {
 
 	@EnvironmentObject var animalsData: AnimalsData
 
-	@State private var isTapped = false
+	@ObservedObject private var viewModel: AnimalViewModel
 
-	@State private var isPlaying = false
+	@State private var isTapped = false
 
 	let animal: Animal
 
 	let cellWidth: CGFloat
 
-	private func playAnimalSoundIfNeeded() {
-		guard !isPlaying else {
-			stopPlaying()
-			isPlaying = false
-			return
-		}
-		if let url = animal.sounds.randomElement() {
-			playSound(url: url)
-			isPlaying = true
-		}
-	}
-
-	private func stopPlaying() {
-		player?.pause()
-		player?.cancelPendingPrerolls()
-		player = nil
-		if let observer = playerObserver1{
-			NotificationCenter.default.removeObserver(observer)
-		}
-		if let observer = playerObserver2{
-			NotificationCenter.default.removeObserver(observer)
-		}
-	}
-
-	private func playSound(url: URL) {
-		player?.cancelPendingPrerolls()
-		player = nil
-		let playerItem = AVPlayerItem(url: url)
-		player = AVPlayer(playerItem: playerItem)
-		player?.volume = 1.0
-		player?.play()
-		playerObserver1 = NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime, object: player?.currentItem, queue: .main) { _ in
-			isPlaying = false
-		}
-		playerObserver2 = NotificationCenter.default.addObserver(forName: .AVPlayerItemFailedToPlayToEndTime, object: player?.currentItem, queue: .main) { _ in
-			isPlaying = false
-		}
+	init(animal: Animal, cellWidth: CGFloat) {
+		self.animal = animal
+		self.cellWidth = cellWidth
+		self.viewModel = AnimalViewModel(animal: animal)
 	}
 
     var body: some View {
@@ -81,14 +41,14 @@ struct AnimalView: View {
 					animalsData.toggleFavorite(animalID: animal.id)
 				}
 				let playAction = UIAction(title: NSLocalizedString("Animal.ContextMenu.Action.Play", comment: "")) { _ in
-					playAnimalSoundIfNeeded()
+					viewModel.playRandomSound()
 				}
 				return UIMenu(title: "", children: [favoriteAction, playAction])
 			}
 			.scaleEffect(isTapped ? 1.3 : 1.0)
 			.animation(.spring(response: 0.2, dampingFraction: 0.6), value: isTapped)
 			.onTapGesture {
-				playAnimalSoundIfNeeded()
+				viewModel.playRandomSound()
 				isTapped.toggle()
 				DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
 					isTapped.toggle()
@@ -98,7 +58,7 @@ struct AnimalView: View {
 				Text(animal.name)
 					.foregroundColor(Color("Text"))
 					.lineLimit(1)
-				if isPlaying {
+				if viewModel.isPlaying {
 					Image(systemName: "play.circle.fill")
 						.imageScale(.small)
 						.foregroundColor(Color("Brand"))

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C07FF5AC27A67110005B248F /* SoundPlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07FF5AB27A67110005B248F /* SoundPlayerService.swift */; };
+		C07FF5AE27A6811F005B248F /* AnimalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07FF5AD27A6811F005B248F /* AnimalViewModel.swift */; };
 		FF15E50026C549FB005AD900 /* CustomPreviewContextMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF15E4FF26C549FB005AD900 /* CustomPreviewContextMenu.swift */; };
 		FF15E50226C552DC005AD900 /* AnimalPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF15E50126C552DC005AD900 /* AnimalPhotoView.swift */; };
 		FFDDE6AD26C69CFF00D1EE9D /* UserDefaultsFavoritesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDDE6AC26C69CFF00D1EE9D /* UserDefaultsFavoritesStorage.swift */; };
@@ -57,6 +59,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C07FF5AB27A67110005B248F /* SoundPlayerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayerService.swift; sourceTree = "<group>"; };
+		C07FF5AD27A6811F005B248F /* AnimalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalViewModel.swift; sourceTree = "<group>"; };
 		FF15E4FF26C549FB005AD900 /* CustomPreviewContextMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPreviewContextMenu.swift; sourceTree = "<group>"; };
 		FF15E50126C552DC005AD900 /* AnimalPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalPhotoView.swift; sourceTree = "<group>"; };
 		FFDDE6AC26C69CFF00D1EE9D /* UserDefaultsFavoritesStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsFavoritesStorage.swift; sourceTree = "<group>"; };
@@ -129,6 +133,7 @@
 			children = (
 				FF15E4FF26C549FB005AD900 /* CustomPreviewContextMenu.swift */,
 				FFEB626D26C3B43A00FE2DD1 /* WebView.swift */,
+				C07FF5AB27A67110005B248F /* SoundPlayerService.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -249,6 +254,7 @@
 				FFEB623E26C38ECF00FE2DD1 /* AboutThisAppView.swift */,
 				FF15E50126C552DC005AD900 /* AnimalPhotoView.swift */,
 				FFEB624026C38ECF00FE2DD1 /* AnimalView.swift */,
+				C07FF5AD27A6811F005B248F /* AnimalViewModel.swift */,
 				FFEB624126C38ECF00FE2DD1 /* AppView.swift */,
 				FFEB626626C3B11500FE2DD1 /* Licenses */,
 				FF15E4FA26C4FA9E005AD900 /* Utils */,
@@ -458,8 +464,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C07FF5AE27A6811F005B248F /* AnimalViewModel.swift in Sources */,
 				FF15E50226C552DC005AD900 /* AnimalPhotoView.swift in Sources */,
 				FFEB624526C38ECF00FE2DD1 /* AnimalView.swift in Sources */,
+				C07FF5AC27A67110005B248F /* SoundPlayerService.swift in Sources */,
 				FFEB624926C38F1100FE2DD1 /* Animal.swift in Sources */,
 				FF15E50026C549FB005AD900 /* CustomPreviewContextMenu.swift in Sources */,
 				FFEB624326C38ECF00FE2DD1 /* AboutThisAppView.swift in Sources */,
