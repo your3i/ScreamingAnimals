@@ -49,7 +49,7 @@ struct AboutThisAppView: View {
 				HStack {
 					Text("AboutThisApp.Menu.SendFeedbacks")
 						.onTapGesture {
-							if let url = URL(string: "itms-apps://itunes.apple.com/app/" + "1580740019") {
+							if let url = URL(string: "itms-apps://itunes.apple.com/app/1580740019?action=write-review") {
 								UIApplication.shared.open(url, options: [:], completionHandler: nil)
 							}
 						}
