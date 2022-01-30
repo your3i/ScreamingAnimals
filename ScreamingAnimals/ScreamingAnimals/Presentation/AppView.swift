@@ -33,6 +33,14 @@ struct AppView: View {
 		return floor(Double(screenWidth - 32) / Double(colCount))
 	}
 
+	private var listData: [Animal] {
+		if favoritesOnly {
+			return animalsData.animals.filter { $0.isFavorite }
+		} else {
+			return animalsData.animals
+		}
+	}
+
     var body: some View {
 		NavigationView {
 			ScrollView(showsIndicators: false) {
@@ -42,7 +50,7 @@ struct AppView: View {
 				}
 				let width = colWidth
 				LazyVGrid(columns: [GridItem(.adaptive(minimum: width, maximum: width), spacing: nil)]) {
-					ForEach(animalsData.animals) {
+					ForEach(listData) {
 						AnimalView(animal: $0, cellWidth: width)
 					}
 				}
@@ -71,7 +79,7 @@ struct AppView: View {
 							Image(systemName: "arrow.up.arrow.down.circle")
 						}
 						Menu {
-							Button(action: { favoritesOnly = false}, label: {
+							Button(action: { favoritesOnly = false }, label: {
 								Text("Home.FilterMenu.ShowAll")
 							})
 							Button(action: { favoritesOnly = true }, label: {
