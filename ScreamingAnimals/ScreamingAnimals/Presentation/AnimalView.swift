@@ -31,7 +31,7 @@ struct AnimalView: View {
 		VStack {
 			CustomPreviewContextMenu {
 				KFImage(animal.image)
-					.resizing(referenceSize: CGSize(width: cellWidth - 6, height: cellWidth - 6))
+					.resizing(referenceSize: CGSize(width: cellWidth - 6, height: cellWidth - 6), mode: .aspectFill)
 					.clipShape(Circle())
 					.shadow(color: .black, radius: 2)
 			} preview: {
