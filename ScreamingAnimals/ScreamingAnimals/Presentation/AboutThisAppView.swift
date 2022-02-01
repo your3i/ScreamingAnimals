@@ -37,23 +37,21 @@ struct AboutThisAppView: View {
 			}
 
 			Section {
-				HStack {
+				Button {
+					if let window = UIApplication.shared.windows.first?.windowScene {
+						SKStoreReviewController.requestReview(in: window)
+					}
+				} label: {
 					Text("AboutThisApp.Menu.SubmitAReview")
-						.onTapGesture {
-							if let window = UIApplication.shared.windows.first?.windowScene {
-								SKStoreReviewController.requestReview(in: window)
-							}
-						}
-					Spacer()
+						.foregroundColor(Color("Text"))
 				}
-				HStack {
+				Button {
+					if let url = URL(string: "itms-apps://itunes.apple.com/app/1580740019?action=write-review") {
+						UIApplication.shared.open(url, options: [:], completionHandler: nil)
+					}
+				} label: {
 					Text("AboutThisApp.Menu.SendFeedbacks")
-						.onTapGesture {
-							if let url = URL(string: "itms-apps://itunes.apple.com/app/1580740019?action=write-review") {
-								UIApplication.shared.open(url, options: [:], completionHandler: nil)
-							}
-						}
-					Spacer()
+						.foregroundColor(Color("Text"))
 				}
 			}
 		}
