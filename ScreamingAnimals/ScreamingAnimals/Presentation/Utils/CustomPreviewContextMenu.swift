@@ -36,7 +36,7 @@ struct CustomPreviewContextMenu_Previews: PreviewProvider {
 	static var previews: some View {
 		let animalImage = URL(string: "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/lion_1.jpg")
 		let animal = Animal(id: "123", name: "animal name", image: animalImage, imageCredit: "credit text", sounds: [])
-		AnimalView(animal: animal)
+		AnimalView(animal: animal, cellWidth: 92)
 	}
 }
 
@@ -61,6 +61,7 @@ struct CustomPreviewContextMenuHelper<Content: View, Preview: View>: UIViewRepre
 		view.backgroundColor = .clear
 
 		let hostView = UIHostingController(rootView: content)
+		hostView.view.backgroundColor = .clear
 		hostView.view.translatesAutoresizingMaskIntoConstraints = false
 		let constraints = [
 			hostView.view.topAnchor.constraint(equalTo: view.topAnchor),
@@ -70,6 +71,7 @@ struct CustomPreviewContextMenuHelper<Content: View, Preview: View>: UIViewRepre
 			hostView.view.widthAnchor.constraint(equalTo: view.widthAnchor),
 			hostView.view.heightAnchor.constraint(equalTo: view.heightAnchor)
 		]
+
 		view.addSubview(hostView.view)
 		view.addConstraints(constraints)
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C07FF5AC27A67110005B248F /* SoundPlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07FF5AB27A67110005B248F /* SoundPlayerService.swift */; };
+		C07FF5AE27A6811F005B248F /* AnimalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07FF5AD27A6811F005B248F /* AnimalViewModel.swift */; };
 		FF15E50026C549FB005AD900 /* CustomPreviewContextMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF15E4FF26C549FB005AD900 /* CustomPreviewContextMenu.swift */; };
 		FF15E50226C552DC005AD900 /* AnimalPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF15E50126C552DC005AD900 /* AnimalPhotoView.swift */; };
 		FFDDE6AD26C69CFF00D1EE9D /* UserDefaultsFavoritesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDDE6AC26C69CFF00D1EE9D /* UserDefaultsFavoritesStorage.swift */; };
@@ -20,7 +22,6 @@
 		FFEB621B26C38DB500FE2DD1 /* ScreamingAnimalsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEB621A26C38DB500FE2DD1 /* ScreamingAnimalsTests.swift */; };
 		FFEB622626C38DB500FE2DD1 /* ScreamingAnimalsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEB622526C38DB500FE2DD1 /* ScreamingAnimalsUITests.swift */; };
 		FFEB623526C38E2700FE2DD1 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FFEB623426C38E2700FE2DD1 /* Kingfisher */; };
-		FFEB623826C38E4000FE2DD1 /* QGrid in Frameworks */ = {isa = PBXBuildFile; productRef = FFEB623726C38E4000FE2DD1 /* QGrid */; };
 		FFEB624226C38ECF00FE2DD1 /* AnimalsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEB623D26C38ECF00FE2DD1 /* AnimalsData.swift */; };
 		FFEB624326C38ECF00FE2DD1 /* AboutThisAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEB623E26C38ECF00FE2DD1 /* AboutThisAppView.swift */; };
 		FFEB624426C38ECF00FE2DD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEB623F26C38ECF00FE2DD1 /* AppDelegate.swift */; };
@@ -58,6 +59,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C07FF5AB27A67110005B248F /* SoundPlayerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayerService.swift; sourceTree = "<group>"; };
+		C07FF5AD27A6811F005B248F /* AnimalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalViewModel.swift; sourceTree = "<group>"; };
 		FF15E4FF26C549FB005AD900 /* CustomPreviewContextMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPreviewContextMenu.swift; sourceTree = "<group>"; };
 		FF15E50126C552DC005AD900 /* AnimalPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalPhotoView.swift; sourceTree = "<group>"; };
 		FFDDE6AC26C69CFF00D1EE9D /* UserDefaultsFavoritesStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsFavoritesStorage.swift; sourceTree = "<group>"; };
@@ -104,7 +107,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFEB623826C38E4000FE2DD1 /* QGrid in Frameworks */,
 				FFEB623526C38E2700FE2DD1 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -131,6 +133,7 @@
 			children = (
 				FF15E4FF26C549FB005AD900 /* CustomPreviewContextMenu.swift */,
 				FFEB626D26C3B43A00FE2DD1 /* WebView.swift */,
+				C07FF5AB27A67110005B248F /* SoundPlayerService.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 				FFEB623E26C38ECF00FE2DD1 /* AboutThisAppView.swift */,
 				FF15E50126C552DC005AD900 /* AnimalPhotoView.swift */,
 				FFEB624026C38ECF00FE2DD1 /* AnimalView.swift */,
+				C07FF5AD27A6811F005B248F /* AnimalViewModel.swift */,
 				FFEB624126C38ECF00FE2DD1 /* AppView.swift */,
 				FFEB626626C3B11500FE2DD1 /* Licenses */,
 				FF15E4FA26C4FA9E005AD900 /* Utils */,
@@ -338,7 +342,6 @@
 			name = ScreamingAnimals;
 			packageProductDependencies = (
 				FFEB623426C38E2700FE2DD1 /* Kingfisher */,
-				FFEB623726C38E4000FE2DD1 /* QGrid */,
 			);
 			productName = ScreamingAnimals;
 			productReference = FFEB620526C38DB200FE2DD1 /* ScreamingAnimals.app */;
@@ -414,7 +417,6 @@
 			mainGroup = FFEB61FC26C38DB200FE2DD1;
 			packageReferences = (
 				FFEB623326C38E2700FE2DD1 /* XCRemoteSwiftPackageReference "Kingfisher" */,
-				FFEB623626C38E4000FE2DD1 /* XCRemoteSwiftPackageReference "QGrid" */,
 			);
 			productRefGroup = FFEB620626C38DB200FE2DD1 /* Products */;
 			projectDirPath = "";
@@ -462,8 +464,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C07FF5AE27A6811F005B248F /* AnimalViewModel.swift in Sources */,
 				FF15E50226C552DC005AD900 /* AnimalPhotoView.swift in Sources */,
 				FFEB624526C38ECF00FE2DD1 /* AnimalView.swift in Sources */,
+				C07FF5AC27A67110005B248F /* SoundPlayerService.swift in Sources */,
 				FFEB624926C38F1100FE2DD1 /* Animal.swift in Sources */,
 				FF15E50026C549FB005AD900 /* CustomPreviewContextMenu.swift in Sources */,
 				FFEB624326C38ECF00FE2DD1 /* AboutThisAppView.swift in Sources */,
@@ -664,7 +668,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"ScreamingAnimals/Preview Content\"";
 				DEVELOPMENT_TEAM = GXAB643ZM7;
 				ENABLE_PREVIEWS = YES;
@@ -674,11 +678,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.your3i.screaming-animals";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -687,9 +692,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 4;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"ScreamingAnimals/Preview Content\"";
 				DEVELOPMENT_TEAM = GXAB643ZM7;
 				ENABLE_PREVIEWS = YES;
@@ -699,11 +704,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.your3i.screaming-animals";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Screaming Animals App Store";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -837,16 +843,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.3.1;
-			};
-		};
-		FFEB623626C38E4000FE2DD1 /* XCRemoteSwiftPackageReference "QGrid" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Q-Mobile/QGrid";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.4;
+				kind = exactVersion;
+				version = 7.1.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -856,11 +854,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FFEB623326C38E2700FE2DD1 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
-		};
-		FFEB623726C38E4000FE2DD1 /* QGrid */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FFEB623626C38E4000FE2DD1 /* XCRemoteSwiftPackageReference "QGrid" */;
-			productName = QGrid;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -9,70 +9,33 @@ import AVFoundation
 import Kingfisher
 import SwiftUI
 
-private var player: AVPlayer?
-
-private var playerObserver1: NSObjectProtocol?
-
-private var playerObserver2: NSObjectProtocol?
-
-
 struct AnimalView: View {
 
 	@EnvironmentObject var animalsData: AnimalsData
 
-	@State private var isTapped = false
+	@ObservedObject private var viewModel: AnimalViewModel
 
-	@State private var isPlaying = false
+	@State private var isTapped = false
 
 	let animal: Animal
 
-	private func playAnimalSoundIfNeeded() {
-		guard !isPlaying else {
-			stopPlaying()
-			isPlaying = false
-			return
-		}
-		if let url = animal.sounds.randomElement() {
-			playSound(url: url)
-			isPlaying = true
-		}
-	}
+	let cellWidth: CGFloat
 
-	private func stopPlaying() {
-		player?.pause()
-		player?.cancelPendingPrerolls()
-		player = nil
-		if let observer = playerObserver1{
-			NotificationCenter.default.removeObserver(observer)
-		}
-		if let observer = playerObserver2{
-			NotificationCenter.default.removeObserver(observer)
-		}
-	}
-
-	private func playSound(url: URL) {
-		player?.cancelPendingPrerolls()
-		player = nil
-		let playerItem = AVPlayerItem(url: url)
-		player = AVPlayer(playerItem: playerItem)
-		player?.volume = 1.0
-		player?.play()
-		playerObserver1 = NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime, object: player?.currentItem, queue: .main) { _ in
-			isPlaying = false
-		}
-		playerObserver2 = NotificationCenter.default.addObserver(forName: .AVPlayerItemFailedToPlayToEndTime, object: player?.currentItem, queue: .main) { _ in
-			isPlaying = false
-		}
+	init(animal: Animal, cellWidth: CGFloat) {
+		self.animal = animal
+		self.cellWidth = cellWidth
+		self.viewModel = AnimalViewModel(animal: animal)
 	}
 
     var body: some View {
-		VStack() {
+		VStack {
 			CustomPreviewContextMenu {
 				KFImage(animal.image)
-					.resizing(referenceSize: CGSize(width: 100, height: 100), mode: .aspectFill)
+					.resizable()
+					.scaledToFill()
+					.frame(width: cellWidth - 6, height: cellWidth - 6)
 					.clipShape(Circle())
 					.shadow(color: .black, radius: 2)
-					.frame(width: 120, height: 120)
 			} preview: {
 				AnimalPhotoView(animal: animal)
 			} actions: {
@@ -80,14 +43,14 @@ struct AnimalView: View {
 					animalsData.toggleFavorite(animalID: animal.id)
 				}
 				let playAction = UIAction(title: NSLocalizedString("Animal.ContextMenu.Action.Play", comment: "")) { _ in
-					playAnimalSoundIfNeeded()
+					viewModel.playRandomSound()
 				}
 				return UIMenu(title: "", children: [favoriteAction, playAction])
 			}
 			.scaleEffect(isTapped ? 1.3 : 1.0)
-			.animation(.spring(response: 0.4, dampingFraction: 0.6))
+			.animation(.spring(response: 0.2, dampingFraction: 0.6), value: isTapped)
 			.onTapGesture {
-				playAnimalSoundIfNeeded()
+				viewModel.playRandomSound()
 				isTapped.toggle()
 				DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
 					isTapped.toggle()
@@ -96,7 +59,8 @@ struct AnimalView: View {
 			HStack {
 				Text(animal.name)
 					.foregroundColor(Color("Text"))
-				if isPlaying {
+					.lineLimit(1)
+				if viewModel.isPlaying {
 					Image(systemName: "play.circle.fill")
 						.imageScale(.small)
 						.foregroundColor(Color("Brand"))
@@ -108,13 +72,13 @@ struct AnimalView: View {
 			}
 			.padding(.bottom, 8)
 		}
-    }
+	}
 }
 
 struct AnimalView_Previews: PreviewProvider {
     static var previews: some View {
 		let animalImage = URL(string: "https://raw.githubusercontent.com/your3i/ScreamingAnimals/main/docs/resources/lion_1.jpg")
 		let animal = Animal(id: "123", name: "animal name", image: animalImage, imageCredit: "credit text", sounds: [])
-		AnimalView(animal: animal)
+		AnimalView(animal: animal, cellWidth: 92)
     }
 }
