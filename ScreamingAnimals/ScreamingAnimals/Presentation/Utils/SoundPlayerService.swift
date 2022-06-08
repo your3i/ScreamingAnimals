@@ -21,7 +21,9 @@ final class SoundPlayerService {
 
 	let currentPlayingItem: PassthroughSubject<URL?, Never> = PassthroughSubject()
 
-	private init() { }
+	private init() {
+		try? AVAudioSession.sharedInstance().setCategory(.playback)
+	}
 
 	func play(_ url: URL) {
 		let item = AVPlayerItem(url: url)
