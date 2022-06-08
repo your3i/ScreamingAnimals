@@ -15,7 +15,7 @@ struct AboutThisAppView: View {
 				HStack {
 					Text("AboutThisApp.Menu.Version")
 					Spacer()
-					Text("1.0")
+					Text(getVersionNumber())
 				}
 				NavigationLink(
 					destination: LicensesView(),
@@ -57,6 +57,10 @@ struct AboutThisAppView: View {
 		}
 		.navigationTitle(Text("AboutThisApp.Title"))
     }
+
+	private func getVersionNumber() -> String {
+		return Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.0"
+	}
 }
 
 struct AboutThisAppView_Previews: PreviewProvider {
