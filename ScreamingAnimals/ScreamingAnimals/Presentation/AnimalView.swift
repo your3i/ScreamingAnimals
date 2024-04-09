@@ -5,7 +5,6 @@
 //  Created by nono on 2021/08/09.
 //
 
-import AVFoundation
 import Kingfisher
 import SwiftUI
 

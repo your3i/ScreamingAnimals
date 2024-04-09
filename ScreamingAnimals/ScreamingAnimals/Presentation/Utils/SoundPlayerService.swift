@@ -6,8 +6,8 @@
 //
 
 import Foundation
-import AVFoundation
 import Combine
+import AVFoundation
 
 final class SoundPlayerService {
 

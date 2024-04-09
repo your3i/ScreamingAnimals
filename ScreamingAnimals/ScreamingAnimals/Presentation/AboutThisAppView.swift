@@ -38,8 +38,8 @@ struct AboutThisAppView: View {
 
 			Section {
 				Button {
-					if let window = UIApplication.shared.windows.first?.windowScene {
-						SKStoreReviewController.requestReview(in: window)
+					if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
+						SKStoreReviewController.requestReview(in: windowScene)
 					}
 				} label: {
 					Text("AboutThisApp.Menu.SubmitAReview")
