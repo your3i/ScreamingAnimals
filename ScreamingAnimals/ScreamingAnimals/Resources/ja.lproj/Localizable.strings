@@ -18,7 +18,9 @@
 
 "Home.FilterMenu.ShowFavoritesOnly" = "お気に入り";
 
-"Animal.ContextMenu.Action.Favorite" = "お気に入り";
+"Animal.ContextMenu.Action.Favorite" = "お気に入りにする";
+
+"Animal.ContextMenu.Action.Favorite.Remove" = "お気に入りから外す";
 
 "Animal.ContextMenu.Action.Play" = "再生";
 

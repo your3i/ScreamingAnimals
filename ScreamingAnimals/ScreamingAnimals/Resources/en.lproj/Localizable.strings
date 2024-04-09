@@ -18,7 +18,9 @@
 
 "Home.FilterMenu.ShowFavoritesOnly" = "Favorites only";
 
-"Animal.ContextMenu.Action.Favorite" = "Favorite";
+"Animal.ContextMenu.Action.Favorite" = "Add to Favorites";
+
+"Animal.ContextMenu.Action.Favorite.Remove" = "Remove from Favorites";
 
 "Animal.ContextMenu.Action.Play" = "Play";
 

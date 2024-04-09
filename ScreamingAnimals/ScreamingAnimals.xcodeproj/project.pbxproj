@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		C07FF5AC27A67110005B248F /* SoundPlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07FF5AB27A67110005B248F /* SoundPlayerService.swift */; };
 		C07FF5AE27A6811F005B248F /* AnimalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07FF5AD27A6811F005B248F /* AnimalViewModel.swift */; };
-		FF15E50026C549FB005AD900 /* CustomPreviewContextMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF15E4FF26C549FB005AD900 /* CustomPreviewContextMenu.swift */; };
 		FF15E50226C552DC005AD900 /* AnimalPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF15E50126C552DC005AD900 /* AnimalPhotoView.swift */; };
 		FFDDE6AD26C69CFF00D1EE9D /* UserDefaultsFavoritesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDDE6AC26C69CFF00D1EE9D /* UserDefaultsFavoritesStorage.swift */; };
 		FFDDE6AF26C6A73400D1EE9D /* FavoritesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDDE6AE26C6A73400D1EE9D /* FavoritesStorage.swift */; };
@@ -61,7 +60,6 @@
 /* Begin PBXFileReference section */
 		C07FF5AB27A67110005B248F /* SoundPlayerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayerService.swift; sourceTree = "<group>"; };
 		C07FF5AD27A6811F005B248F /* AnimalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalViewModel.swift; sourceTree = "<group>"; };
-		FF15E4FF26C549FB005AD900 /* CustomPreviewContextMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPreviewContextMenu.swift; sourceTree = "<group>"; };
 		FF15E50126C552DC005AD900 /* AnimalPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalPhotoView.swift; sourceTree = "<group>"; };
 		FFDDE6AC26C69CFF00D1EE9D /* UserDefaultsFavoritesStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsFavoritesStorage.swift; sourceTree = "<group>"; };
 		FFDDE6AE26C6A73400D1EE9D /* FavoritesStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesStorage.swift; sourceTree = "<group>"; };
@@ -131,7 +129,6 @@
 		FF15E4FA26C4FA9E005AD900 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				FF15E4FF26C549FB005AD900 /* CustomPreviewContextMenu.swift */,
 				FFEB626D26C3B43A00FE2DD1 /* WebView.swift */,
 				C07FF5AB27A67110005B248F /* SoundPlayerService.swift */,
 			);
@@ -469,7 +466,6 @@
 				FFEB624526C38ECF00FE2DD1 /* AnimalView.swift in Sources */,
 				C07FF5AC27A67110005B248F /* SoundPlayerService.swift in Sources */,
 				FFEB624926C38F1100FE2DD1 /* Animal.swift in Sources */,
-				FF15E50026C549FB005AD900 /* CustomPreviewContextMenu.swift in Sources */,
 				FFEB624326C38ECF00FE2DD1 /* AboutThisAppView.swift in Sources */,
 				FFDDE6AF26C6A73400D1EE9D /* FavoritesStorage.swift in Sources */,
 				FFEB625426C3A38D00FE2DD1 /* APIEndpoints.swift in Sources */,
@@ -673,7 +669,7 @@
 				DEVELOPMENT_TEAM = GXAB643ZM7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ScreamingAnimals/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -699,7 +695,7 @@
 				DEVELOPMENT_TEAM = GXAB643ZM7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ScreamingAnimals/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
